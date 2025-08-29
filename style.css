@@ -7,12 +7,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*TODO root */
 :root {
-    --bg-color: black;
-    --text-color: white;
+    --text-black-color: black;
+    --text-white-color: white;
     --border-color: rgb(207, 203, 203);
     --format-color: red;
 }
@@ -25,16 +26,15 @@ html {
 /*! section height */
 section {
     height: 100vh;
-
-
+    scroll-snap-align: start;
 }
 
 /*! full body color */
-body {
+/* body {
     background: #0F2027;
     background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);
     background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
-}
+}  */
 
 /*=============================
 MAIN STYLING START    
@@ -43,6 +43,14 @@ MAIN STYLING START
 /* ==============================
 Home 
 ===============================*/
+#home {
+    scroll-snap-align: start;
+    background: #283048;
+    background: -webkit-linear-gradient(to top, #859398, #283048);
+    background: linear-gradient(to top, #859398, #283048);
+    background-attachment: fixed;
+}
+
 .home-container {
     position: fixed;
     top: 25px;
@@ -85,12 +93,11 @@ Home
     align-items: center;
     justify-content: space-around;
     list-style: none;
-
 }
 
 .nav-links {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-white-color);
     margin: 2em;
     font-size: 1.2em;
     font-weight: 500;
@@ -99,8 +106,18 @@ Home
 /* ================================
              About
 ================================ */
+#about {
+    scroll-snap-align: start;
+    background: #E6DADA;
+    background: -webkit-linear-gradient(to top, #274046, #E6DADA);
+    background: linear-gradient(to top, #274046, #E6DADA);
+}
+
 .about-container {
+    border: 2px dashed var(--border-color);
     height: 100vh;
+    width: 80%;
+    margin: auto;
     border: 2px dashed var(--format-color);
     display: flex;
     align-items: center;
@@ -109,6 +126,175 @@ Home
 }
 
 .profile {
-    width: 50%;
+    width: 40%;
+    border: 2px solid var(--format-color);
+}
 
+.profile-image {
+    border-radius: 48%;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+}
+
+.about-content {
+    width: 50%;
+    border: 2px solid var(--format-color);
+    padding: 2em;
+    color: var(--text-black-color);
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-content h1,
+h2 {
+    color: var(--text-black-color);
+    font-size: 3rem;
+    margin-bottom: .2em;
+}
+
+.about-content h3 {
+    color: var(--text-black-color);
+    font-size: 2rem;
+    margin-bottom: .4em;
+}
+
+.about-content p {
+    color: var(--text-black-color);
+    font-size: 1.3rem;
+    margin-bottom: 2em;
+    line-height: 1.4;
+}
+
+.about-content .btn {
+    background-color: var(--text-black-color);
+    color: var(--text-white-color);
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    padding: 24px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.about-content .btn:hover {
+    background-color: var(--text-white-color);
+    color: var(--text-black-color);
+}
+
+/* ================================
+             Skills
+================================ */
+#skills {
+    scroll-snap-align: start;
+    background: #948E99;
+    background: -webkit-linear-gradient(to top, #2E1437, #948E99);
+    background: linear-gradient(to top, #2E1437, #948E99);
+    background-attachment: fixed;
+}
+
+.skills-container {
+    height: 100vh;
+    width: 80%;
+    margin:  0 auto;
+    border: 2px dashed var(--format-color);
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills-container h2 {
+    text-align: center;
+    margin: .2em 0;
+    color: var(--text-black-color);
+    font-size: 2.5rem;
+}
+
+.skills-list {
+    display: flex;
+    border: 2px dashed var(--format-color);
+    margin:  0 auto;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.light-button button.bt {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.light-button button.bt .button-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: #0a0a0a;
+    border-radius: 5px;
+    color: #0f0f0f;
+    font-weight: 700;
+    transition: 300ms;
+    outline: #0f0f0f 2px solid;
+    outline-offset: 20;
+}
+
+.light-button button.bt .button-holder svg {
+    height: 50px;
+    fill: #0f0f0f;
+    transition: 300ms;
+}
+
+.light-button button.bt .light-holder {
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.light-button button.bt .light-holder .dot {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.light-button button.bt .light-holder .light {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+    background: transparent;
+}
+
+.light-button button.bt:hover .button-holder svg {
+    fill: rgba(88, 101, 242, 1);
+}
+
+.light-button button.bt:hover .button-holder {
+    color: rgba(88, 101, 242, 1);
+    outline: rgba(88, 101, 242, 1) 2px solid;
+    outline-offset: 2px;
+}
+
+.light-button button.bt:hover .light-holder .light {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg,
+            rgba(88, 101, 242, 1) 0%,
+            rgba(255, 255, 255, 0) 75%,
+            rgba(255, 255, 255, 0) 100%);
 }
