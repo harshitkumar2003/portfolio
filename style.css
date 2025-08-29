@@ -1,0 +1,114 @@
+/* =============================
+           Styling Sheet 
+============================== */
+
+/*! Universal styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*TODO root */
+:root {
+    --bg-color: black;
+    --text-color: white;
+    --border-color: rgb(207, 203, 203);
+    --format-color: red;
+}
+
+/*! for smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/*! section height */
+section {
+    height: 100vh;
+
+
+}
+
+/*! full body color */
+body {
+    background: #0F2027;
+    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
+}
+
+/*=============================
+MAIN STYLING START    
+=============================*/
+
+/* ==============================
+Home 
+===============================*/
+.home-container {
+    position: fixed;
+    top: 25px;
+    z-index: 1;
+    width: 100vw;
+}
+
+.nav-container {
+    border: 3px solid var(--border-color);
+    background-color: var(--bg-color);
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 3.5rem;
+    margin: auto;
+    border-radius: 2.5em;
+}
+
+.nav-left a {
+    margin-left: 1em;
+    color: transparent;
+    text-rendering: auto;
+    text-decoration: none;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.7rem;
+    background-image: url(https://thumbs.dreamstime.com/b/dynamic-clash-vibrant-blue-orange-lightning-bolts-against-dark-background-symbolizes-energy-power-digital-art-abstract-natural-385460465.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-clip: text;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+.nav-links {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 2em;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/* ================================
+             About
+================================ */
+.about-container {
+    height: 100vh;
+    border: 2px dashed var(--format-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-wrap: wrap;
+}
+
+.profile {
+    width: 50%;
+
+}
