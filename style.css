@@ -12,8 +12,8 @@
 
 /*TODO root */
 :root {
-    --text-black-color: black;
-    --text-white-color: white;
+    --primary-text-color: rgb(255, 255, 255);
+    --secondary-text-color: rgb(0, 0, 0);
     --border-color: rgb(207, 203, 203);
     --format-color: red;
 }
@@ -29,19 +29,14 @@ section {
     scroll-snap-align: start;
 }
 
-/*! full body color */
-/* body {
-    background: #0F2027;
-    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);
-    background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
-}  */
 
 /*=============================
 MAIN STYLING START    
 =============================*/
 
+
 /* ==============================
-Home 
+             Home 
 ===============================*/
 #home {
     scroll-snap-align: start;
@@ -52,124 +47,142 @@ Home
 }
 
 .home-container {
+    width: 100vw;
     position: fixed;
     top: 25px;
     z-index: 1;
-    width: 100vw;
 }
 
 .nav-container {
-    border: 3px solid var(--border-color);
-    background-color: var(--bg-color);
-    background-color: rgba(0, 0, 0, 0.3);
+    width: 75%;
     display: flex;
+    margin: 0 auto;
+    padding: 1.3em;
     align-items: center;
-    justify-content: space-around;
-    width: 80%;
-    height: 3.5rem;
-    margin: auto;
-    border-radius: 2.5em;
+    text-align: center;
+    border-radius: 1.5em;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-left {
+    height: 2rem;
+    display: grid;
+    margin-left: .5em;
+    place-items: center;
 }
 
 .nav-left a {
-    margin-left: 1em;
+    font-size: 2.5rem;
+    font-weight: 400;
     color: transparent;
-    text-rendering: auto;
-    text-decoration: none;
-    font-family: "Exo 2", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
     font-style: normal;
-    font-size: 1.7rem;
-    background-image: url(https://thumbs.dreamstime.com/b/dynamic-clash-vibrant-blue-orange-lightning-bolts-against-dark-background-symbolizes-energy-power-digital-art-abstract-natural-385460465.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
     background-clip: text;
+    font-optical-sizing: auto;
+    background-position: center;
+    font-family: "Ruslan Display", sans-serif;
+    background-image: url(https://thumbs.dreamstime.com/b/dynamic-clash-vibrant-blue-orange-lightning-bolts-against-dark-background-symbolizes-energy-power-digital-art-abstract-natural-385460465.jpg);
 }
 
 .nav-items {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--primary-text-color);
 }
 
 .nav-links {
+    font-size: 1.1em;
+    margin: 0 2em 0 2em;
     text-decoration: none;
-    color: var(--text-white-color);
-    margin: 2em;
-    font-size: 1.2em;
-    font-weight: 500;
+    color: var(--primary-text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.nav-items li:nth-child(6) {
+    padding: .8em 0;
+    cursor: pointer;
+    list-style: none;
+    margin-right: 1em;
+    border-radius: 1.5em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    background-color: var(--primary-text-color);
+}
+
+.nav-items li:nth-child(6) a {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+/* home end */
+
 
 /* ================================
              About
 ================================ */
 #about {
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     background: #E6DADA;
     background: -webkit-linear-gradient(to top, #274046, #E6DADA);
     background: linear-gradient(to top, #274046, #E6DADA);
 }
 
 .about-container {
-    border: 2px dashed var(--border-color);
-    height: 100vh;
     width: 80%;
     margin: auto;
-    border: 2px dashed var(--format-color);
+    height: 100vh;
     display: flex;
+    text-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    text-wrap: wrap;
 }
 
 .profile {
-    width: 40%;
-    border: 2px solid var(--format-color);
+    max-width: 42%;
 }
 
 .profile-image {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
     border-radius: 48%;
     border: 2px solid var(--border-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 450px;
-    width: 450px;
-    object-fit: cover;
+   
 }
 
 .about-content {
-    width: 50%;
-    border: 2px solid var(--format-color);
     padding: 2em;
-    color: var(--text-black-color);
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 52%;
 }
 
 .about-content h1,
 h2 {
-    color: var(--text-black-color);
     font-size: 3rem;
-    margin-bottom: .2em;
+    margin-bottom: .1em;
+    color: var(--primary-text-color);
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .about-content h3 {
-    color: var(--text-black-color);
     font-size: 2rem;
+    font-weight: 900;
     margin-bottom: .4em;
+    color: var(--primary-text-color);
 }
 
 .about-content p {
-    color: var(--text-black-color);
+    color: var(--primary-text-color);
     font-size: 1.3rem;
     margin-bottom: 2em;
     line-height: 1.4;
 }
 
 .about-content .btn {
-    background-color: var(--text-black-color);
-    color: var(--text-white-color);
+    background-color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     text-decoration: none;
     list-style: none;
     border: none;
@@ -179,11 +192,13 @@ h2 {
     transition: background-color 0.3s ease;
 }
 
-
+.icon-spacing {
+    margin-right: 1em;
+}
 
 .about-content .btn:hover {
-    background-color: var(--text-white-color);
-    color: var(--text-black-color);
+    background-color: var(--primary-text-color);
+    color: var(--secondary-text-color);
 }
 
 /* ================================
@@ -209,7 +224,7 @@ h2 {
 .skills-container h2 {
     text-align: center;
     margin: .2em 0;
-    color: var(--text-black-color);
+    color: var(--primary-text-color);
     font-size: 2.5rem;
 }
 
@@ -265,7 +280,7 @@ h2 {
 }
 
 .light-button button.bt:hover .light-holder {
-     background: linear-gradient(180deg,
+    background: linear-gradient(180deg,
             rgba(88, 101, 242, 1) 0%,
             rgba(255, 255, 255, 0) 75%,
             rgba(255, 255, 255, 0) 100%);
