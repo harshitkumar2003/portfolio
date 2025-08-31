@@ -14,9 +14,10 @@
 :root {
     --primary-text-color: rgb(255, 255, 255);
     --secondary-text-color: rgb(0, 0, 0);
-    --role-color: rgb(7, 7, 44);
-    --border-color: rgb(207, 203, 203);
+    --role-color: rgb(143, 149, 106);
+    --border-color: rgb(163, 163, 163);
     --format-color: red;
+    --bg-transparent-color: rgba(0, 0, 0, 0.5)
 }
 
 /*! for smooth scroll */
@@ -24,10 +25,16 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-image: url(Image/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /*! section height */
 section {
     height: 100vh;
-    scroll-snap-align: start;
 }
 
 
@@ -40,30 +47,41 @@ MAIN STYLING START
              Home 
 ===============================*/
 #home {
+    display: flex;
+    align-items: center;
     scroll-snap-align: start;
-    background: #283048;
-    background: -webkit-linear-gradient(to top, #859398, #283048);
-    background: linear-gradient(to top, #859398, #283048);
+    justify-content: center;
+    background: transparent;
     background-attachment: fixed;
+    background-color: var(--bg-transparent-color);
+    /* border: 2px solid var(--format-color); */
 }
 
 .home-container {
-    width: 100vw;
-    position: fixed;
-    top: 25px;
-    z-index: 1;
+    width: 85%;
+    height: 80vh;
+    display: flex;
+    margin-top: 4rem;
+    border-radius: 3rem;
+    align-items: center;
+    background: transparent;
+    justify-content: center;
+    border: 2px solid var(--border-color);
+    /* background-color: var(--bg-transparent-color); */
+
 }
 
 .nav-container {
-    width: 75%;
+    width: 85%;
+    position: fixed;
+    top: 20px;
     display: flex;
-    margin: 0 auto;
-    padding: 1.3em;
+    padding: .4em;
     align-items: center;
     text-align: center;
-    border-radius: 1.5em;
+    border-radius: 1em;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .nav-left {
@@ -82,7 +100,8 @@ MAIN STYLING START
     font-optical-sizing: auto;
     background-position: center;
     font-family: "Ruslan Display", sans-serif;
-    background-image: url(https://thumbs.dreamstime.com/b/dynamic-clash-vibrant-blue-orange-lightning-bolts-against-dark-background-symbolizes-energy-power-digital-art-abstract-natural-385460465.jpg);
+    background-image: url(https://thumbs.dreamstime.com/b/glow-fire-abstract-background-illustration-warm-inviting-image-shapes-colors-movement-glow-fire-abstract-background-glow-fire-372070061.jpg);
+    filter: sepia(1);
 }
 
 .nav-items {
@@ -102,7 +121,8 @@ MAIN STYLING START
 }
 
 .nav-items li:nth-child(6) {
-    padding: .8em 0;
+    padding: .4em 0;
+    margin: .3em 0;
     cursor: pointer;
     list-style: none;
     margin-right: 1em;
@@ -126,36 +146,45 @@ MAIN STYLING START
 ================================ */
 #about {
     scroll-snap-align: center;
-    background: #E6DADA;
-    background: -webkit-linear-gradient(to top, #274046, #E6DADA);
-    background: linear-gradient(to top, #274046, #E6DADA);
+    background: transparent;
+    background-color: var(--bg-transparent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid var(--format-color); */
 }
 
 .about-container {
-    width: 80%;
-    margin: auto;
-    height: 100vh;
+    width: 85%;
+    height: 80vh;
     display: flex;
-    text-wrap: wrap;
+    margin-top: 4rem;
+    border-radius: 3rem;
     align-items: center;
-    justify-content: space-between;
+    background: transparent;
+    justify-content: space-evenly;
+    border: 2px solid var(--border-color);
+    /* background-color: var(--bg-transparent-color); */
 }
 
 .profile {
-    max-width: 42%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
 }
 
 .profile-image {
-    width: 450px;
-    height: 450px;
-    object-fit: cover;
-    border-radius: 48%;
-    transition: transform .2s ease-in-out;
+    margin: auto;
+    height: auto;
+    display: block;
+    max-width: 60%;
+    border-radius: 23%;
+    transition: transform 1.2s ease-in-out;
     border: 2px solid var(--border-color);
 }
 
 .profile-image:hover {
-    transform: scale(.1.1);
+    transform: scale(1.1);
 }
 
 .about-content {
@@ -181,7 +210,13 @@ h2 {
 
 .role::before {
     content: "Front-end Developer";
-    color: var(--role-color);
+    color: transparent;
+    font-style: normal;
+    background-clip: text;
+    font-optical-sizing: auto;
+    background-position: center;
+    background-image: url(https://thumbs.dreamstime.com/b/glow-fire-abstract-background-illustration-warm-inviting-image-shapes-colors-movement-glow-fire-abstract-background-glow-fire-372070061.jpg);
+    filter: sepia(1);
     transition: opacity 4s ease;
     animation: revealrole 5s ease infinite;
 }
@@ -247,31 +282,33 @@ h2 {
     color: var(--secondary-text-color);
 }
 
+/* about end */
+
+
 /* ================================
              Skills
 ================================ */
 #skills {
-    scroll-snap-align: start;
-    background: #948E99;
-    background: -webkit-linear-gradient(to top, #2E1437, #948E99);
-    background: linear-gradient(to top, #2E1437, #948E99);
-    background-attachment: fixed;
+    scroll-snap-align: center;
+    background: transparent;
+    background-color: var(--bg-transparent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid var(--format-color); */
 }
 
 .skills-container {
-    height: 100vh;
-    width: 100%;
-    margin: 0 auto;
-    border: 2px dashed var(--format-color);
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    display: inline-grid;
-}
-
-.skills-container h2 {
-    text-align: center;
-    margin: .2em 0;
-    color: var(--primary-text-color);
-    font-size: 2.5rem;
+    width: 85%;
+    height: 80vh;
+    display: flex;
+    margin-top: 4rem;
+    border-radius: 3rem;
+    align-items: center;
+    background: transparent;
+    justify-content: center;
+    border: 2px solid var(--border-color);
+    /* background-color: var(--bg-transparent-color); */
 }
 
 .skills-list {
@@ -285,9 +322,9 @@ h2 {
 
 .skill-item {
     width: fit-content;
-    display: flex;
     padding: 1em;
     gap: 1em;
+    border-radius: 1em;
     place-items: center;
     justify-content: space-between;
     border: 2px solid var(--border-color);
@@ -295,39 +332,136 @@ h2 {
 }
 
 .skill-item h3 {
-    font-size: 1.5rem;
-    margin: 0;
+    color: var(--primary-text-color);
+    font-size: 1.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
 }
 
-.light-button {
+.skill-item img {
+    margin: 1rem;
+}
+
+/* skills end */
+
+
+/* ================================
+             Projects
+================================ */
+#projects {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    scroll-snap-align: start;
     justify-content: center;
-    height: 50px;
-    width: 100px;
-    background-color: #0a0a0a;
-    border-radius: 5px;
-    color: #0f0f0f;
-    font-weight: 700;
-    transition: 300ms;
-    outline: #0f0f0f 2px solid;
-    outline-offset: 20;
+    background: transparent;
+    background-attachment: fixed;
+    /* border: 2px solid var(--format-color); */
+    background-color: var(--bg-transparent-color);
 }
 
-
-.light-button button.bt .light-holder {
-    position: absolute;
-    height: 200px;
-    width: 100px;
+.projects-container {
+    width: 85%;
+    height: 80vh;
     display: flex;
-    flex-direction: column;
+    margin-top: 4rem;
+    border-radius: 3rem;
     align-items: center;
+    background: transparent;
+    justify-content: center;
+    border: 2px solid var(--border-color);
+    /* background-color: var(--bg-transparent-color); */
+
 }
 
-.light-button button.bt:hover .light-holder {
-    background: linear-gradient(180deg,
-            rgba(88, 101, 242, 1) 0%,
-            rgba(255, 255, 255, 0) 75%,
-            rgba(255, 255, 255, 0) 100%);
+/* projects end */
+
+
+/* ================================
+             Educaion
+================================ */
+#education {
+    display: flex;
+    align-items: center;
+    scroll-snap-align: start;
+    justify-content: center;
+    background: transparent;
+    background-attachment: fixed;
+    /* border: 2px solid var(--format-color); */
+    background-color: var(--bg-transparent-color);
+}
+
+.education-container {
+    width: 85%;
+    height: 80vh;
+    display: flex;
+    margin-top: 4rem;
+    border-radius: 3rem;
+    align-items: center;
+    background: transparent;
+    justify-content: center;
+    border: 2px solid var(--border-color);
+    /* background-color: var(--bg-transparent-color); */
+
+}
+
+/* education end */
+
+
+/* ================================
+             gallery
+================================ */
+#gallery {
+    display: flex;
+    align-items: center;
+    scroll-snap-align: start;
+    justify-content: center;
+    background: transparent;
+    background-attachment: fixed;
+    /* border: 2px solid var(--format-color); */
+    background-color: var(--bg-transparent-color);
+}
+
+.gallery-container {
+    width: 85%;
+    height: 80vh;
+    display: flex;
+    margin-top: 4rem;
+    border-radius: 3rem;
+    align-items: center;
+    background: transparent;
+    justify-content: center;
+    border: 2px solid var(--border-color);
+    /* background-color: var(--bg-transparent-color); */
+
+}
+
+/* gallery end */
+
+
+/* ================================
+         contact and support
+================================ */
+#contact {
+    display: flex;
+    align-items: center;
+    scroll-snap-align: start;
+    justify-content: center;
+    background: transparent;
+    background-attachment: fixed;
+    /* border: 3px solid var(--format-color); */
+    background-color: var(--bg-transparent-color);
+}
+
+.contact-container {
+    width: 85%;
+    height: 80vh;
+    display: flex;
+    margin-top: 4rem;
+    border-radius: 3rem;
+    align-items: center;
+    background: transparent;
+    justify-content: center;
+    border: 32x solid var(--border-color);
+    /* background-color: var(--bg-transparent-color); */
+
 }
