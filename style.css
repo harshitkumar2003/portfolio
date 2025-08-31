@@ -146,12 +146,12 @@ MAIN STYLING START
              About
 ================================ */
 #about {
-    scroll-snap-align: center;
-    background: transparent;
-    background-color: var(--bg-transparent-color);
     display: flex;
-    justify-content: center;
     align-items: center;
+    background: transparent;
+    justify-content: center;
+    scroll-snap-align: center;
+    background-color: var(--bg-transparent-color);
     /* border: 2px solid var(--format-color); */
 }
 
@@ -210,39 +210,45 @@ h2 {
 }
 
 .role::before {
-    content: "Front-end Developer";
-    color: transparent;
+    filter: sepia(1);
     font-style: normal;
+    color: transparent;
     background-clip: text;
     font-optical-sizing: auto;
     background-position: center;
-    background-image: url(https://thumbs.dreamstime.com/b/glow-fire-abstract-background-illustration-warm-inviting-image-shapes-colors-movement-glow-fire-abstract-background-glow-fire-372070061.jpg);
-    filter: sepia(1);
     transition: opacity 4s ease;
+    content: "Front-end Developer";
     animation: revealrole 5s ease infinite;
+    background-image: url(https://thumbs.dreamstime.com/b/glow-fire-abstract-background-illustration-warm-inviting-image-shapes-colors-movement-glow-fire-abstract-background-glow-fire-372070061.jpg);
 }
 
 @keyframes revealrole {
     0% {
         opacity: 1;
     }
+
     20% {
         content: "Front-end Developer";
         opacity: 1;
     }
+
     40% {
         opacity: 0;
     }
+
     60% {
         opacity: 1;
     }
+
     70% {
         opacity: 0;
         content: "Software Developer";
     }
+
     90% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -273,8 +279,8 @@ h2 {
 }
 
 .about-content .btn:hover {
-    background-color: var(--primary-text-color);
     color: var(--secondary-text-color);
+    background-color: var(--primary-text-color);
 }
 
 /* about end */
@@ -284,12 +290,12 @@ h2 {
              Skills
 ================================ */
 #skills {
-    scroll-snap-align: center;
-    background: transparent;
-    background-color: var(--bg-transparent-color);
     display: flex;
-    justify-content: center;
     align-items: center;
+    background: transparent;
+    justify-content: center;
+    scroll-snap-align: center;
+    background-color: var(--bg-transparent-color);
     /* border: 2px solid var(--format-color); */
 }
 
@@ -300,36 +306,37 @@ h2 {
     margin-top: 4rem;
     border-radius: 3rem;
     align-items: center;
-    background: transparent;
     justify-content: center;
+    background: transparent;
     border: 2px solid var(--border-color);
     /* background-color: var(--bg-transparent-color); */
 }
 
 .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 100%;
     justify-content: center;
-    align-items: center;
-    padding: 2em;
+    column-gap: 4rem;
+    row-gap: 4rem;
+    padding: 4rem;
 }
 
 .skill-item {
-    width: fit-content;
+    width: auto;
     padding: 1em;
     gap: 1em;
     border-radius: 1em;
     place-items: center;
     justify-content: space-between;
     border: 2px solid var(--border-color);
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, .4);
 }
 
 .skill-item h3 {
     color: var(--primary-text-color);
     font-size: 1.8rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia, Times, 'Times New Roman', serif;
     font-weight: 100;
 }
 
