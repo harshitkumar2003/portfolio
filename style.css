@@ -113,6 +113,7 @@ MAIN STYLING START
 }
 
 .nav-links {
+    font-weight: 500;
     font-size: 1.1em;
     margin: 0 2em 0 2em;
     text-decoration: none;
@@ -225,29 +226,23 @@ h2 {
     0% {
         opacity: 1;
     }
-
     20% {
         content: "Front-end Developer";
         opacity: 1;
     }
-
     40% {
         opacity: 0;
     }
-
     60% {
         opacity: 1;
     }
-
     70% {
         opacity: 0;
         content: "Software Developer";
     }
-
     90% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
