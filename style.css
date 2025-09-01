@@ -15,8 +15,9 @@
     --primary-text-color: rgb(255, 255, 255);
     --secondary-text-color: rgb(0, 0, 0);
     --role-color: rgb(143, 149, 106);
-    --border-color: rgb(163, 163, 163);
-    --bg-transparent-color: rgba(0, 0, 0, 0.5)
+    --border-color: rgba(40, 39, 39, 0.3);
+    --bg-transparent-color: rgba(18, 18, 18, 0.1);
+    --bg-hover-color: rgba(255, 255, 255, 0.1);
 }
 
 /*! for smooth scroll */
@@ -40,8 +41,6 @@ MAIN STYLING START
 ===============================*/
 #home {
     scroll-snap-align: start;
-    
-
 }
 
 .home-container {
@@ -64,11 +63,11 @@ MAIN STYLING START
     align-items: center;
     background-color: transparent;
     justify-content: space-between;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.4s ease;
 }
 
 .nav-container.scrolled {
-  background-color: var(--secondary-text-color);
+    background-color: var(--secondary-text-color);
 }
 
 .nav-left {
@@ -87,9 +86,11 @@ MAIN STYLING START
     color: transparent;
     font-style: normal;
     background-clip: text;
+    text-decoration: none;
     font-optical-sizing: auto;
     background-position: center;
     font-family: "Ruslan Display", sans-serif;
+    text-shadow: 4px 2px 1px var(--bg-transparent-color);
     background-image: url(https://thumbs.dreamstime.com/b/glow-fire-abstract-background-illustration-warm-inviting-image-shapes-colors-movement-glow-fire-abstract-background-glow-fire-372070061.jpg);
 }
 
@@ -119,7 +120,7 @@ MAIN STYLING START
 }
 
 .home-headline {
-    margin: 3.5em;
+    margin: 0 3.5em;
     width: 100%;
     text-wrap: wrap;
 }
@@ -137,10 +138,11 @@ MAIN STYLING START
     color: transparent;
     background-clip: text;
     font-optical-sizing: auto;
-    background-position: center;
+    background-position: bottom;
     transition: opacity 4s ease;
     content: "Front-end Developer";
     animation: revealrole 5s ease infinite;
+    text-shadow: 4px 2px 1px var(--bg-transparent-color);
     background-image: url(https://thumbs.dreamstime.com/b/glow-fire-abstract-background-illustration-warm-inviting-image-shapes-colors-movement-glow-fire-abstract-background-glow-fire-372070061.jpg);
 }
 
@@ -212,6 +214,7 @@ MAIN STYLING START
     color: var(--primary-text-color);
     border: 2px solid var(--primary-text-color);
 }
+
 /* home end */
 
 
@@ -219,27 +222,39 @@ MAIN STYLING START
              About
 ================================ */
 #about {
-    display: flex;
+    display: block;
     align-items: center;
     background: transparent;
     justify-content: center;
     scroll-snap-align: center;
-  
-    /* border: 2px solid var(--format-color); */
+    padding: 5rem 1rem;
+}
+
+.section-heading {
+    font-size: 3rem;
+    margin: 1.8rem 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--primary-text-color);
 }
 
 .about-container {
-    width: 85%;
-    height: 80vh;
-    display: flex;
-    margin-top: 4rem;
-    border-radius: 3rem;
-    align-items: center;
+    max-width: 100%;
+    border-radius: 2rem;
     background: transparent;
-    justify-content: space-evenly;
     border: 2px solid var(--border-color);
     background-color: var(--bg-transparent-color);
-    /* background-color: var(--bg-transparent-color); */
+    transition: background-color 0.8s ease;
+}
+
+.about-container:hover {
+    background-color: var(--bg-hover-color);
+}
+
+.about-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .profile {
@@ -252,9 +267,10 @@ MAIN STYLING START
     margin: auto;
     height: auto;
     display: block;
-    max-width: 60%;
-    border-radius: 23%;
-    transition: transform 1.2s ease-in-out;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition: transform .6s ease-in-out;
     border: 2px solid var(--border-color);
 }
 
@@ -264,7 +280,7 @@ MAIN STYLING START
 
 .about-content {
     padding: 2em;
-    max-width: 52%;
+    max-width: 65%;
 }
 
 .about-content h3 {
