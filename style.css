@@ -56,13 +56,19 @@ MAIN STYLING START
 
 .nav-container {
     top: 0;
+    z-index: 3;
     width: 100%;
     display: flex;
     padding: .3em;
     position: fixed;
     align-items: center;
+    background-color: transparent;
     justify-content: space-between;
-    background-color: var(--secondary-text-color);
+    transition: background-color 0.3s ease;
+}
+
+.nav-container.scrolled {
+  background-color: var(--secondary-text-color);
 }
 
 .nav-left {
