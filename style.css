@@ -44,6 +44,7 @@ MAIN STYLING START
 }
 
 .home-container {
+    flex: 1;
     height: 90vh;
     display: flex;
     max-width: 100%;
@@ -54,6 +55,7 @@ MAIN STYLING START
 
 .nav-container {
     top: 0;
+    flex: 1;
     z-index: 3;
     width: 100%;
     display: flex;
@@ -70,6 +72,7 @@ MAIN STYLING START
 }
 
 .nav-left {
+    flex: 1;
     height: 4rem;
     display: flex;
     align-items: center;
@@ -98,6 +101,7 @@ MAIN STYLING START
 }
 
 .nav-items {
+    flex: 1;
     display: flex;
     list-style: none;
     align-items: center;
@@ -113,7 +117,6 @@ MAIN STYLING START
     background-clip: text;
     background-size: 0% 100%;
     background-repeat: no-repeat;
-    -webkit-background-clip: text;
     color: var(--primary-text-color);
     transition: background-size 0.4s ease;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -126,13 +129,14 @@ MAIN STYLING START
 }
 
 .home-page {
+    flex: 1;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .home-headline {
     width: 100%;
     margin: 0 3.5em;
-    text-wrap: wrap;
 }
 
 .home-title {
@@ -210,7 +214,14 @@ MAIN STYLING START
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.home-headline .btn {
+.home-btn {
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 3rem;
+    display: flex;
+}
+
+.home-btn .btn {
     border: none;
     padding: 20px;
     cursor: pointer;
@@ -222,25 +233,24 @@ MAIN STYLING START
     background-color: var(--secondary-text-color);
 }
 
-.home-headline .btn:hover {
+.home-btn .btn:hover {
     color: var(--secondary-text-color);
     background-color: var(--primary-text-color);
 }
 
-.icon-spacing {
-    margin: 1em;
-}
-
-.home-headline :nth-child(4) {
+.home-btn :nth-child(1) {
     margin-right: 2rem;
 }
 
-.home-headline :nth-child(5) {
+.home-headline :nth-child(2) {
     background-color: transparent;
     color: var(--primary-text-color);
     border: 2px solid var(--primary-text-color);
 }
 
+.icon-spacing {
+    margin: 1em;
+}
 /* home end */
 
 
@@ -279,6 +289,7 @@ MAIN STYLING START
 }
 
 .about-page {
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -294,6 +305,7 @@ MAIN STYLING START
     width: 300px;
     height: 300px;
     display: block;
+    background-size: 100px 200px;
     border-radius: 50%;
     transition: transform .6s ease-in-out;
     border: 2px solid var(--border-color);
@@ -303,25 +315,44 @@ MAIN STYLING START
     transform: scale(1.1);
 }
 
-.about-content {
+.home-social {
+    flex: 1;
+    gap: 1rem;
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+    justify-content: center;
+}
 
+.home-social-icon {
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.home-social-icon:hover {
+    color: #0A66C2;
+    transform: scale(1.2);
+}
+
+.about-content {
     max-width: 65%;
 }
 
 .about-content h3 {
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: .4em;
     color: var(--primary-text-color);
 }
-
 
 .about-content p {
     line-height: 1.2;
     font-size: 1.1rem;
     margin-bottom: 3em;
     color: var(--primary-text-color);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* about end */
@@ -331,6 +362,7 @@ MAIN STYLING START
              Skills
 ================================ */
 #skills {
+
     display: flex;
     align-items: center;
     background: transparent;
