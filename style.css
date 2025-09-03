@@ -535,7 +535,37 @@ MAIN STYLING START
 .education-container {
     flex: 1;
     width: 100%;
-    padding: 2rem 4rem;
+    padding: 3rem 4rem;
+    border-radius: 2rem;
+    border: 2px solid var(--border-color);
+    background-color: var(--bg-transparent-color);
+}
+
+.education-data {
+    margin: 2rem 0;
+    color: var(--primary-text-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.education-names {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.education-names i {
+padding: 1rem;
+}
+
+.education-name {
+    font-size: 2rem;
+}
+
+.education-platform {
+    font-size: 1.8rem;
+}
+
+.education-duration {
+    font-size: large;
 }
 
 /* education end */
