@@ -42,16 +42,12 @@ MAIN STYLING START
 ===============================*/
 #home {
     scroll-snap-align: start;
+    padding: 4rem 0;
 }
 
 .home-container {
-    flex: 1;
+    padding: 1.8rem 0;
     height: 90vh;
-    display: flex;
-    max-width: 100%;
-    align-items: center;
-    background: transparent;
-    justify-content: center;
 }
 
 .nav-container {
@@ -141,8 +137,9 @@ MAIN STYLING START
 }
 
 .home-title {
-    margin-top: 3rem;
     font-size: 6.2rem;
+    line-height: 1;
+    padding-top: 2rem;
     word-spacing: -8px;
     color: var(--primary-text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -237,10 +234,6 @@ MAIN STYLING START
 .home-btn .btn:hover {
     color: var(--secondary-text-color);
     background-color: var(--primary-text-color);
-}
-
-.home-btn :nth-child(1) {
-    margin-right: 2rem;
 }
 
 .home-btn :nth-child(2) {
@@ -438,8 +431,7 @@ MAIN STYLING START
 }
 
 .projects-container {
-    width: 100%;
-    padding: 2rem 4rem;
+    padding: 2em 4rem;
     border-radius: 2rem;
     border: 2px solid var(--border-color);
     transition: background-color 0.8s ease;
@@ -450,32 +442,41 @@ MAIN STYLING START
 }
 
 .project-page {
-    flex: 1;
+    /* padding: 2px; */
     display: flex;
-    max-width: 100%;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: center;
+    gap: 2rem;
 }
 
 .project-img {
-    width: 45%;
+
+
+
+    flex: 1 1 12rem;
+
     height: auto;
     object-fit: cover;
     position: relative;
-    border: 1px solid var(--secondary-text-color);
     color: var(--primary-text-color);
+    border: 1px solid var(--secondary-text-color);
+    transition: all .8s ease;
+}
+
+.project-img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(5px 5px 12px #000000);
 }
 
 #p1 {
-    height: 30rem;
+    height: 34rem;
     background-size: cover;
     background-image: url(Image/moto-s.png);
 }
 
 #p2 {
-    height: 30rem;
+    height: 34rem;
     background-size: cover;
     background-image: url(Image/between.png);
 }
@@ -486,6 +487,13 @@ MAIN STYLING START
     position: absolute;
     text-align: center;
     background-color: var(--secondary-text-color);
+}
+
+.project-subtitle {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
 }
 
 
