@@ -15,9 +15,10 @@
     --primary-text-color: rgb(255, 255, 255);
     --secondary-text-color: rgb(0, 0, 0);
     --role-color: rgb(143, 149, 106);
-    --border-color: rgba(40, 39, 39, 0.3);
+    --border-color: rgba(28, 28, 28, 0.5);
     --bg-transparent-color: rgba(255, 255, 255, 0.1);
     --bg-hover-color: rgba(255, 255, 255, 0.2);
+
 }
 
 /*! for smooth scroll */
@@ -310,7 +311,8 @@ MAIN STYLING START
     display: block;
     border-radius: 50%;
     background-size: cover;
-    transition: all .4s ease-in-out;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
     border: 2px solid var(--border-color);
 }
 
@@ -399,8 +401,8 @@ MAIN STYLING START
 
 .skill-item h3 {
     font-weight: 600;
-    text-align: center;
     font-size: 1.4rem;
+    text-align: center;
     color: var(--primary-text-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -431,27 +433,62 @@ MAIN STYLING START
              Projects
 ================================ */
 #projects {
-    padding: 5rem 1rem;
+    padding: 4rem 1rem;
     scroll-snap-align: center;
 }
 
 .projects-container {
     width: 100%;
     padding: 2rem 4rem;
+    border-radius: 2rem;
+    border: 2px solid var(--border-color);
+    transition: background-color 0.8s ease;
+}
+
+.projects-container:hover {
+    background-color: var(--bg-hover-color);
 }
 
 .project-page {
     flex: 1;
-    width: 100%;
     display: flex;
+    max-width: 100%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+
 }
- 
+
 .project-img {
     width: 45%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    border: 1px solid var(--secondary-text-color);
+    color: var(--primary-text-color);
 }
+
+#p1 {
+    height: 30rem;
+    background-size: cover;
+    background-image: url(Image/moto-s.png);
+}
+
+#p2 {
+    height: 30rem;
+    background-size: cover;
+    background-image: url(Image/between.png);
+}
+
+.project-detail {
+    bottom: 0;
+    padding: 1rem;
+    position: absolute;
+    text-align: center;
+    background-color: var(--secondary-text-color);
+}
+
+
 
 /* projects end */
 
