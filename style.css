@@ -220,6 +220,8 @@ MAIN STYLING START
 }
 
 .home-btn .btn {
+    display: flex;
+    align-items: center;
     border: none;
     padding: 20px;
     cursor: pointer;
@@ -243,7 +245,7 @@ MAIN STYLING START
 }
 
 .icon-spacing {
-    margin-left: 1em;
+    margin-left: .4em;
 }
 
 /* home end */
@@ -442,26 +444,22 @@ MAIN STYLING START
 }
 
 .project-page {
+    gap: 3rem;
     /* padding: 2px; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
 }
 
 .project-img {
-
-
-
-    flex: 1 1 12rem;
-
     height: auto;
+    flex: 1 1 12rem;
     object-fit: cover;
     position: relative;
+    transition: all .8s ease;
     color: var(--primary-text-color);
     border: 1px solid var(--secondary-text-color);
-    transition: all .8s ease;
 }
 
 .project-img:hover {
@@ -496,7 +494,33 @@ MAIN STYLING START
     text-align: left;
 }
 
+.project-btns {
+    padding: 1rem;
+}
 
+.project-btns a {
+    cursor: pointer;
+    margin: .4rem;
+    font-size: 1.2rem;
+    padding: 10px 10px;
+    border-radius: .7rem;
+    text-decoration: none;
+    transition: all 0.6s ease;
+    color: var(--primary-text-color);
+    border: 2px solid var(--border-color);
+    background-color: var(--bg-transparent-color);
+}
+
+.project-btns a:hover {
+    background-color: var(--bg-hover-color);
+    border: 2px solid var(--primary-text-color);
+    color: var(--secondary-text-color);
+}
+
+.project-btns a:nth-child(2):hover {
+    color: var(--format-color);
+    border: 2px solid var(--primary-text-color);
+}
 
 /* projects end */
 
@@ -505,14 +529,11 @@ MAIN STYLING START
              Educaion
 ================================ */
 #education {
-    display: flex;
     align-items: center;
     scroll-snap-align: start;
     justify-content: center;
     background: transparent;
     background-attachment: fixed;
-    /* border: 2px solid var(--format-color); */
-    background-color: var(--bg-transparent-color);
 }
 
 .education-container {
@@ -586,5 +607,4 @@ MAIN STYLING START
     justify-content: center;
     border: 32x solid var(--border-color);
     /* background-color: var(--bg-transparent-color); */
-
 }
