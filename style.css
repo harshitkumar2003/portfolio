@@ -266,7 +266,7 @@ MAIN STYLING START
 .section-heading {
     font-size: 2.5rem;
     font-weight: 600;
-    margin: 1.8rem 0;
+    margin: 2rem 0;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--primary-text-color);
@@ -428,24 +428,21 @@ MAIN STYLING START
              Projects
 ================================ */
 #projects {
-    padding: 4rem 1rem;
+    padding: 4rem 3rem;
     scroll-snap-align: center;
 }
 
 .projects-container {
-    padding: 2em 4rem;
+    padding: 4rem 4rem;
     border-radius: 2rem;
     border: 2px solid var(--border-color);
-    transition: background-color 0.8s ease;
+    background-color: var(--bg-transparent-color);
 }
 
-.projects-container:hover {
-    background-color: var(--bg-hover-color);
-}
 
 .project-page {
-    gap: 3rem;
-    /* padding: 2px; */
+    gap: 6rem;
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -457,6 +454,7 @@ MAIN STYLING START
     flex: 1 1 12rem;
     object-fit: cover;
     position: relative;
+    border-radius: .5rem;
     transition: all .8s ease;
     color: var(--primary-text-color);
     border: 1px solid var(--secondary-text-color);
@@ -468,13 +466,13 @@ MAIN STYLING START
 }
 
 #p1 {
-    height: 34rem;
+    height: 32rem;
     background-size: cover;
     background-image: url(Image/moto-s.png);
 }
 
 #p2 {
-    height: 34rem;
+    height: 32rem;
     background-size: cover;
     background-image: url(Image/between.png);
 }
@@ -484,6 +482,7 @@ MAIN STYLING START
     padding: 1rem;
     position: absolute;
     text-align: center;
+    border-radius: .5rem;
     background-color: var(--secondary-text-color);
 }
 
@@ -537,23 +536,32 @@ MAIN STYLING START
     width: 100%;
     padding: 3rem 4rem;
     border-radius: 2rem;
-    border: 2px solid var(--border-color);
-    background-color: var(--bg-transparent-color);
+    /* border: 2px solid var(--border-color);
+    background-color: var(--bg-transparent-color); */
 }
 
 .education-data {
     margin: 2rem 0;
+    border-radius: .5rem;
+    transition: all 1s ease;
     color: var(--primary-text-color);
+    border: 2px solid var(--border-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.education-data:hover {
+    transform: scale(1.1);
+    background-color: var(--bg-hover-color);
+}
+
 .education-names {
+    line-height: 1.4;
     text-align: center;
     padding: 2rem 0;
 }
 
 .education-names i {
-padding: 1rem;
+    padding: .1rem;
 }
 
 .education-name {
