@@ -436,7 +436,7 @@ MAIN STYLING START
     padding: 4rem 4rem;
     border-radius: 2rem;
     border: 2px solid var(--border-color);
-    background-color: var(--bg-transparent-color);
+    background-color: var(--bg-hover-color);
 }
 
 
@@ -462,7 +462,7 @@ MAIN STYLING START
 
 .project-img:hover {
     transform: scale(1.1);
-    filter: drop-shadow(5px 5px 12px #000000);
+    filter: drop-shadow(5px 15px 8px black);
 }
 
 #p1 {
@@ -540,8 +540,22 @@ MAIN STYLING START
     background-color: var(--bg-transparent-color); */
 }
 
+#data1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(var(--border-color)), url(Image/miet.png);
+}
+
+#data2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image:  linear-gradient(var(--border-color)), url(/Image/ccsu.png);
+}
+
 .education-data {
-    margin: 2rem 0;
+    margin: 4rem 0;
     border-radius: .5rem;
     transition: all 1s ease;
     color: var(--primary-text-color);
@@ -551,7 +565,6 @@ MAIN STYLING START
 
 .education-data:hover {
     transform: scale(1.1);
-    background-color: var(--bg-hover-color);
 }
 
 .education-names {
