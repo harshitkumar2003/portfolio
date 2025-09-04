@@ -2,7 +2,7 @@
     Responsive Styles
 ============================== */
 
-/* For tablets and smaller (≤ 768px) */
+/*! For tablets and smaller (≤ 768px) */
 @media (max-width: 768px) {
     .nav-container {
         flex-wrap: wrap;
@@ -179,11 +179,6 @@
     .profile-image {
         width: 200px;
         height: 200px;
-    }
-
-    .skill-item {
-        /* padding: 1rem; */
-        /* width: 90%; */
     }
 
     .skill-achieve {
