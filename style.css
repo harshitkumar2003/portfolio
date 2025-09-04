@@ -443,7 +443,7 @@ MAIN STYLING START
 
 .project-img:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 #p1 {
@@ -782,4 +782,3 @@ MAIN STYLING START
 .scroll-top {
     margin-left: 1rem;
 }
-
