@@ -12,13 +12,12 @@
 /*TODO root */
 :root {
     --format-color: red;
-    --linkedin-color: rgb(12, 12, 193);
-    --primary-text-color: rgb(255, 255, 255);
+    --link-color: rgb(220, 120, 120);
     --secondary-text-color: rgb(0, 0, 0);
-    --role-color: rgb(143, 149, 106);
     --border-color: rgba(28, 28, 28, 0.5);
-    --bg-transparent-color: rgba(255, 255, 255, 0.1);
+    --primary-text-color: rgb(255, 255, 255);
     --bg-hover-color: rgba(255, 255, 255, 0.2);
+    --bg-transparent-color: rgba(255, 255, 255, 0.1);
 
 }
 
@@ -121,7 +120,7 @@ MAIN STYLING START
 
 .nav-links:hover {
     text-decoration: overline;
-    color: rgb(220, 120, 120);
+    color: var(--link-color);
 }
 
 .home-page {
@@ -281,11 +280,11 @@ MAIN STYLING START
 }
 
 .about-page {
+    gap: 2rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .profile {
@@ -302,10 +301,10 @@ MAIN STYLING START
 }
 
 .home-social {
-    display: flex;
-    justify-content: center;
     gap: 2rem;
+    display: flex;
     margin-top: 1.5rem;
+    justify-content: center;
 }
 
 .home-social a {
@@ -315,7 +314,7 @@ MAIN STYLING START
 }
 
 .home-social a:hover {
-    transform: scale(1.4);
+    transform: scale(1.05);
 }
 
 .about-content {
@@ -540,8 +539,7 @@ MAIN STYLING START
 }
 
 .education-data:hover {
-    transform: scale(1.2);
-    background: #d4af37;
+    transform: scale(1.05);
 }
 
 #data1 {
@@ -586,27 +584,26 @@ MAIN STYLING START
 ================================ */
 #gallery {
     padding: 4rem 2rem;
-    background-color: var(--bg-transparent-color);
     scroll-snap-align: start;
 }
 
 .gallery-container {
-    max-width: 1200px;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .section-title {
-    text-align: center;
     font-size: 3rem;
+    text-align: center;
     margin-bottom: 2rem;
     color: var(--primary-text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .gallery-grid {
+    gap: 1.5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
 }
 
 .gallery-item {
@@ -618,22 +615,21 @@ MAIN STYLING START
 
 .gallery-item img {
     width: 100%;
-    height: auto;
+    height: 250px;
     display: block;
+    object-fit: cover;
+    /* object-position: center; */
+    /*! cut krra h images ko center se top se kiya to img hi nhi dikhegi need to change images else edit */
     transition: transform 0.4s ease;
 }
 
 .gallery-item:hover img {
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
-
 
 /* gallery end */
 
 
-/* ================================
-         contact and support
-================================ */
 /* ==============================
         Contact Section
 ============================== */
@@ -644,8 +640,8 @@ MAIN STYLING START
 }
 
 .contact-container {
-    max-width: 1100px;
     margin: auto;
+    max-width: 1100px;
     text-align: center;
 }
 
@@ -656,9 +652,9 @@ MAIN STYLING START
 }
 
 .contact-wrapper {
+    gap: 2rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -682,43 +678,46 @@ MAIN STYLING START
 }
 
 .contact-details {
-    list-style: none;
     padding: 0;
+    list-style: none;
     color: var(--primary-text-color);
 }
 
 .contact-details li {
-    margin: 0.6rem 0;
     font-size: 1rem;
+    margin: 0.6rem 0;
 }
 
 .contact-details i {
     margin-right: 0.5rem;
-    color: var(--secondary-text-color);
+    color: var(--link-color);
 }
 
 .contact-details a {
     color: var(--primary-text-color);
-    text-decoration: underline;
 }
 
 .contact-form {
     flex: 1;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
     gap: 1.5rem;
+    display: flex;
+    min-width: 300px;
     text-align: left;
+    flex-direction: column;
 }
 
 .form-group {
-    display: flex;
-    align-items: center;
     gap: 0.8rem;
-    background-color: transparent;
-    border: 1px solid var(--secondary-text-color);
-    padding: 0.8rem 1rem;
+    display: flex;
     border-radius: 8px;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    background-color: transparent;
+    border: 1px solid var(--primary-text-color);
+}
+
+.form-group label i {
+    color: var(--primary-text-color);
 }
 
 .form-group input,
@@ -726,9 +725,9 @@ MAIN STYLING START
     flex: 1;
     border: none;
     outline: none;
+    font-size: 1rem;
     background: transparent;
     color: var(--primary-text-color);
-    font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -737,20 +736,20 @@ MAIN STYLING START
 }
 
 .contact-btn {
-    align-self: flex-start;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    background-color: var(--secondary-text-color);
-    color: var(--primary-text-color);
     border: none;
-    border-radius: 8px;
+    font-size: 1rem;
     cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    align-self: flex-start;
+    color: var(--primary-text-color);
     transition: background-color 0.3s ease;
+    background-color: var(--secondary-text-color);
 }
 
 .contact-btn:hover {
-    background-color: var(--primary-text-color);
     color: var(--secondary-text-color);
+    background-color: var(--primary-text-color);
 }
 
 /* contact end */
@@ -766,13 +765,13 @@ MAIN STYLING START
 }
 
 .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
     gap: 1rem;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .footer-left {
@@ -781,26 +780,25 @@ MAIN STYLING START
 }
 
 .footer-logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
-    font-family: "Ruslan Display", sans-serif;
     color: var(--primary-text-color);
-    text-shadow: 2px 2px 2px var(--bg-transparent-color);
+    font-family: "Ruslan Display", sans-serif;
 }
 
 .footer-left p {
-    font-size: 0.9rem;
     opacity: 0.8;
+    font-size: 1rem;
 }
 
 .footer-right {
-    display: flex;
     gap: 1rem;
+    display: flex;
 }
 
 .footer-right a {
+    font-size: 1.6rem;
     color: var(--primary-text-color);
-    font-size: 1.3rem;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
