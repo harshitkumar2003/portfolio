@@ -110,21 +110,17 @@ MAIN STYLING START
 
 .nav-links {
     margin: 0 2em;
-    font-size: 3vh;
     font-weight: 500;
+    font-size: 1.2rem;
     text-decoration: none;
-    background-clip: text;
-    background-size: 0% 100%;
-    background-repeat: no-repeat;
     color: var(--primary-text-color);
-    transition: background-size 0.4s ease;
+    transition: all .5s ease;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav-links:hover {
-    color: transparent;
-    background-size: 100% 100%;
-    background-image: linear-gradient(to right, #d4af37, #c0c0c0);
+    text-decoration: overline;
+    color: rgb(220, 120, 120);
 }
 
 .home-page {
