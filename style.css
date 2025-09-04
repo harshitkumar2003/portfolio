@@ -250,35 +250,34 @@ MAIN STYLING START
 
 /* home end */
 
-
-/* ================================
-             About
-================================ */
-#about {
-    display: block;
-    padding: 5rem 1rem;
-    align-items: center;
-    background: transparent;
-    justify-content: center;
-    scroll-snap-align: center;
-}
-
+/* ==============================
+        Section Heading
+============================== */
 .section-heading {
     font-size: 2.5rem;
     font-weight: 600;
-    margin: 2rem 0;
+    margin-bottom: 3rem;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--primary-text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ==============================
+             About
+============================== */
+#about {
+    padding: 5rem 1rem;
+    scroll-snap-align: center;
 }
 
 .about-container {
-    max-width: 100%;
-    border-radius: 2rem;
-    background: transparent;
     border: 2px solid var(--border-color);
+    border-radius: 2rem;
     background-color: var(--bg-transparent-color);
-    transition: background-color 0.8s ease;
+    transition: background-color 0.4s ease;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .about-container:hover {
@@ -286,29 +285,24 @@ MAIN STYLING START
 }
 
 .about-page {
-    flex-wrap: wrap;
-    flex: 1;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
     justify-content: center;
+    align-items: center;
 }
 
 .profile {
-    width: auto;
-    margin: auto;
-    height: auto;
-    object-fit: contain;
+    text-align: center;
 }
 
 .profile-image {
-    width: 300px;
-    height: 300px;
-    display: block;
-    border-radius: 50%;
-    background-size: cover;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-    transition: all .3s ease-in-out;
+    border-radius: 50%;
     border: 2px solid var(--border-color);
+    transition: transform 0.3s ease-in-out;
 }
 
 .profile-image:hover {
@@ -316,277 +310,242 @@ MAIN STYLING START
 }
 
 .home-social {
-    flex: 1;
-    gap: 1rem;
     display: flex;
-    margin: 2rem 0;
-    align-items: center;
     justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
 .home-social-icon {
-    color: var(--primary-text-color);
     font-size: 1.8rem;
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
+    color: var(--primary-text-color);
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .home-social-icon:hover {
     transform: scale(1.2);
+    color: var(--format-color);
 }
 
 .about-content {
-    width: 70%;
+    flex: 1;
+    max-width: 600px;
 }
 
 .about-content h3 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: .4em;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
     color: var(--primary-text-color);
 }
 
 .about-content p {
-    line-height: 1.2;
-    font-size: 1.1rem;
-    margin-bottom: 3em;
+    font-size: 1rem;
+    line-height: 1.6;
     color: var(--primary-text-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* about end */
-
-
-/* ================================
+/* ==============================
              Skills
-================================ */
+============================== */
 #skills {
     padding: 5rem 1rem;
     scroll-snap-align: center;
 }
 
 .skills-container {
-    flex: 1;
-    width: 100%;
-    padding: 2rem 4rem;
-
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .skills-list {
-    gap: 2rem;
     display: flex;
     flex-wrap: wrap;
+    gap: 2rem;
     justify-content: center;
 }
 
 .skill-item {
-    width: 25rem;
-    border-radius: 1em;
-    place-items: center;
-    padding: 2rem 0 1.8rem;
+    flex: 1 1 250px;
+    padding: 1.5rem;
     border: 2px solid var(--border-color);
     background-color: var(--bg-transparent-color);
-    transition: all .4s ease;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .skill-item:hover {
-    transform: scale(1.1);
+    transform: translateY(-5px);
     background-color: var(--bg-hover-color);
 }
 
 .skill-item h3 {
-    font-weight: 600;
-    font-size: 1.4rem;
     text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
     color: var(--primary-text-color);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .skill-item ul {
-    /* display: grid; */
     display: flex;
     flex-wrap: wrap;
+    gap: 0.6rem;
     list-style: none;
-    padding-top: 1rem;
+    padding: 0;
+    justify-content: center;
 }
 
 .skill-achieve {
-    flex: 1;
-    padding: .8rem;
-    width: fit-content;
+    padding: 0.6rem 1rem;
     border-radius: 2rem;
-    margin: 0.6rem .6rem 0 0;
-    color: var(--primary-text-color);
+    font-size: 0.9rem;
     border: 2px solid var(--border-color);
     background-color: var(--bg-hover-color);
+    color: var(--primary-text-color);
+    white-space: nowrap;
 }
 
-/* skills end */
-
-
-/* ================================
+/* ==============================
              Projects
-================================ */
+============================== */
 #projects {
-    padding: 4rem 3rem;
+    padding: 5rem 1rem;
     scroll-snap-align: center;
 }
 
 .projects-container {
-    padding: 4rem 4rem;
-    border-radius: 2rem;
     border: 2px solid var(--border-color);
+    border-radius: 2rem;
+    padding: 2rem;
     background-color: var(--bg-hover-color);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-
 .project-page {
-    gap: 6rem;
-    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    gap: 2rem;
     justify-content: center;
 }
 
 .project-img {
-    height: auto;
-    flex: 1 1 12rem;
-    object-fit: cover;
+    flex: 1 1 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
     position: relative;
-    border-radius: .5rem;
-    transition: all .8s ease;
-    color: var(--primary-text-color);
+    border-radius: 1rem;
     border: 1px solid var(--secondary-text-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-img:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(5px 15px 8px black);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 #p1 {
-    height: 32rem;
-    background-size: cover;
-    background-image: url(Image/moto-s.png);
+    background-image: url("Image/moto-s.png");
 }
 
 #p2 {
-    height: 32rem;
-    background-size: cover;
-    background-image: url(Image/between.png);
+    background-image: url("Image/between.png");
 }
 
 .project-detail {
-    bottom: 0;
-    padding: 1rem;
     position: absolute;
-    text-align: center;
-    border-radius: .5rem;
+    bottom: 0;
+    width: 100%;
     background-color: var(--secondary-text-color);
+    color: var(--primary-text-color);
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .project-subtitle {
-    padding: 1rem;
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
     text-align: left;
+    line-height: 1.5;
 }
 
 .project-btns {
-    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-btns a {
-    cursor: pointer;
-    margin: .4rem;
-    font-size: 1.2rem;
-    padding: 10px 10px;
-    border-radius: .7rem;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
     text-decoration: none;
-    transition: all 0.6s ease;
     color: var(--primary-text-color);
     border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
     background-color: var(--bg-transparent-color);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .project-btns a:hover {
-    background-color: var(--bg-hover-color);
-    border: 2px solid var(--primary-text-color);
+    background-color: var(--primary-text-color);
+    color: var(--secondary-text-color);
+    transform: scale(1.05);
 }
 
-.project-btns a:nth-child(2):hover {
-    color: var(--format-color);
-    border: 2px solid var(--primary-text-color);
-}
-
-/* projects end */
-
-
-/* ================================
-             Educaion
-================================ */
+/* ==============================
+             Education
+============================== */
 #education {
-    padding: 4rem 1rem;
+    padding: 5rem 1rem;
     scroll-snap-align: center;
 }
 
 .education-container {
-    flex: 1;
-    width: 100%;
-    padding: 3rem 4rem;
-    border-radius: 2rem;
-    /* border: 2px solid var(--border-color);
-    background-color: var(--bg-transparent-color); */
-}
-
-#data1 {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: linear-gradient(var(--border-color)), url(Image/miet.png);
-}
-
-#data2 {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: linear-gradient(var(--border-color)), url(/Image/ccsu.png);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .education-data {
-    margin: 4rem 0;
-    border-radius: .5rem;
-    transition: all 1s ease;
-    color: var(--primary-text-color);
+    margin-bottom: 3rem;
+    padding: 2rem;
     border: 2px solid var(--border-color);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 1rem;
+    background-color: var(--bg-transparent-color);
+    color: var(--primary-text-color);
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .education-data:hover {
-    transform: scale(1.1);
-}
-
-.education-names {
-    line-height: 1.4;
-    text-align: center;
-    padding: 2rem 0;
+    transform: translateY(-5px);
+    background-color: var(--bg-hover-color);
 }
 
 .education-names i {
-    padding: .1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-text-color);
 }
 
 .education-name {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.education-platform {
-    font-size: 1.8rem;
-}
-
+.education-platform,
 .education-duration {
-    font-size: large;
+    font-size: 1.1rem;
+    margin-top: 0.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* education end */
@@ -763,3 +722,64 @@ MAIN STYLING START
     background-color: var(--primary-text-color);
     color: var(--secondary-text-color);
 }
+
+/* contact end */
+
+
+/* ==============================
+           Footer
+============================== */
+.footer {
+    padding: 2rem 2.5rem;
+    background-color: var(--secondary-text-color);
+    color: var(--primary-text-color);
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: "Ruslan Display", sans-serif;
+    color: var(--primary-text-color);
+    text-shadow: 2px 2px 2px var(--bg-transparent-color);
+}
+
+.footer-left p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.footer-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-right a {
+    color: var(--primary-text-color);
+    font-size: 1.3rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-right a:hover {
+    color: #d4af37;
+    transform: scale(1.2);
+}
+
+.scroll-top {
+    margin-left: 1rem;
+}
+
