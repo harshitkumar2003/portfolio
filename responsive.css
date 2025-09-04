@@ -66,6 +66,15 @@
         width: 100%;
         justify-content: center;
     }
+
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
 }
 
 /* For mobile phones (≤ 480px) */

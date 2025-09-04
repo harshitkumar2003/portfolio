@@ -596,29 +596,48 @@ MAIN STYLING START
              gallery
 ================================ */
 #gallery {
-    display: flex;
-    align-items: center;
-    scroll-snap-align: start;
-    justify-content: center;
-    background: transparent;
-    background-attachment: fixed;
-    /* border: 2px solid var(--format-color); */
+    padding: 4rem 2rem;
     background-color: var(--bg-transparent-color);
+    scroll-snap-align: start;
 }
 
 .gallery-container {
-    width: 85%;
-    height: 80vh;
-    display: flex;
-    margin-top: 4rem;
-    border-radius: 3rem;
-    align-items: center;
-    background: transparent;
-    justify-content: center;
-    border: 2px solid var(--border-color);
-    /* background-color: var(--bg-transparent-color); */
-
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--primary-text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
 
 /* gallery end */
 
@@ -626,26 +645,121 @@ MAIN STYLING START
 /* ================================
          contact and support
 ================================ */
+/* ==============================
+        Contact Section
+============================== */
 #contact {
-    display: flex;
-    align-items: center;
+    padding: 4rem 2rem;
     scroll-snap-align: start;
-    justify-content: center;
-    background: transparent;
-    background-attachment: fixed;
-    /* border: 3px solid var(--format-color); */
     background-color: var(--bg-transparent-color);
 }
 
 .contact-container {
-    width: 85%;
-    height: 80vh;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-text-color);
+}
+
+.contact-wrapper {
     display: flex;
-    margin-top: 4rem;
-    border-radius: 3rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--primary-text-color);
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-text-color);
+}
+
+.contact-details {
+    list-style: none;
+    padding: 0;
+    color: var(--primary-text-color);
+}
+
+.contact-details li {
+    margin: 0.6rem 0;
+    font-size: 1rem;
+}
+
+.contact-details i {
+    margin-right: 0.5rem;
+    color: var(--secondary-text-color);
+}
+
+.contact-details a {
+    color: var(--primary-text-color);
+    text-decoration: underline;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
     align-items: center;
+    gap: 0.8rem;
+    background-color: transparent;
+    border: 1px solid var(--secondary-text-color);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    flex: 1;
+    border: none;
+    outline: none;
     background: transparent;
-    justify-content: center;
-    border: 32x solid var(--border-color);
-    /* background-color: var(--bg-transparent-color); */
+    color: var(--primary-text-color);
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.contact-btn {
+    align-self: flex-start;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: var(--secondary-text-color);
+    color: var(--primary-text-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: var(--primary-text-color);
+    color: var(--secondary-text-color);
 }
