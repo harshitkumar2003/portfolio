@@ -2,12 +2,97 @@
     Responsive Styles
 ============================== */
 
+
+@media (max-width: 992px) {
+    .home-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+    }
+
+    .home-page {
+        padding: 4rem 0;
+    }
+
+    .home-title {
+        font-size: 10vh;
+        /* large but fits in container */
+    }
+
+    .role-text {
+        font-size: 6vh;
+    }
+
+    .home-headline p {
+        font-size: 1.3rem;
+        max-width: 800px;
+    }
+
+    .home-btn {
+        gap: 2rem;
+    }
+
+    .project-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-img {
+        width: 100%;
+        height: auto;
+        min-height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    .project-detail {
+        width: 100%;
+        padding: 1.2rem;
+        margin-top: 1rem;
+        border-radius: 1rem;
+    }
+}
+
 /*! For tablets and smaller (≤ 768px) */
 @media (max-width: 768px) {
+    .home-container {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+    }
+
+    .home-page {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .home-headline {
+        flex: 1;
+        margin: 0;
+        padding-right: 2rem;
+    }
+
+    .home-headline p {
+        width: 100%;
+        /* prevent overflow */
+        font-size: 1.2rem;
+    }
+
+    .home-title {
+        font-size: 8vh;
+    }
+
+    .role-text {
+        font-size: 5vh;
+    }
+
     .nav-container {
         flex-wrap: wrap;
         padding: 0.8rem 1.5rem;
     }
+
     .nav-right {
         width: 100%;
         order: 3;
@@ -37,19 +122,6 @@
         border: none;
         cursor: pointer;
         color: var(--primary-text-color);
-    }
-
-    .home-title {
-        font-size: 7vh;
-    }
-
-    .role-text {
-        font-size: 5vh;
-    }
-
-    .home-headline p {
-        font-size: 2.5vh;
-        width: 90vw;
     }
 
     .home-btn {
@@ -88,29 +160,6 @@
     .contact-info,
     .contact-form {
         width: 100%;
-    }
-}
-
-@media (max-width: 992px) {
-    .project-page {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-img {
-        width: 100%;
-        height: auto;
-        min-height: 400px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top center;
-    }
-
-    .project-detail {
-        width: 100%;
-        padding: 1.2rem;
-        margin-top: 1rem;
-        border-radius: 1rem;
     }
 }
 

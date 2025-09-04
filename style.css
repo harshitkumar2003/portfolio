@@ -145,7 +145,8 @@ MAIN STYLING START
 
 .role-container {
     position: relative;
-    margin-bottom: 5rem;
+    min-height: 12vh; 
+    margin-bottom: 2rem; 
 }
 
 .role-text {
@@ -202,7 +203,7 @@ MAIN STYLING START
     font-weight: 600;
     line-height: 1.4;
     font-size: 3.5vh;
-    margin: 2.5rem 0;
+    margin-top: 2rem; 
     color: var(--primary-text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -211,6 +212,7 @@ MAIN STYLING START
     flex: 1;
     gap: 3rem;
     display: flex;
+    margin-top: 2rem;
     flex-wrap: wrap;
 }
 
