@@ -11,16 +11,16 @@ window.addEventListener("scroll", function () {
 });
 
 //! ------------------ javascript for nav-container change color on scroll --------------------
-    function submitForm(e) {
+    function submitForm(my) {
         e.preventDefault(); // Prevent real form submission
 
         // Optionally collect data
-        const name = e.target.name.value;
+        const name = my.target.name.value;
         
         // Show confirmation
         alert(`Thank you, ${name || 'there'}! Your message has been sent.`);
         
         // Reset the form
-        e.target.reset();
+        my.target.reset();
     }
 
