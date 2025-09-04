@@ -3,28 +3,55 @@
 ============================== */
 
 
+@media (max-width: 1172px) {
+    .nav-right {
+        margin-right: 3rem;
+    }
+
+    .nav-links {
+        padding: 1rem;
+    }
+}
+
 @media (max-width: 992px) {
+    .nav-right {
+        margin-right: 1rem;
+    }
+
+    .nav-links {
+        font-size: .9em;
+        padding: 0.5rem;
+    }
+
+    .nav-left a {
+        font-size: 7vh;
+    }
+
     .home-container {
         max-width: 1200px;
-        margin: 0 auto;
-        padding: 3rem 2rem;
+        padding: 1rem 0;
     }
 
     .home-page {
-        padding: 4rem 0;
+        padding: 1rem 2rem;
     }
 
     .home-title {
-        font-size: 10vh;
-        /* large but fits in container */
+        font-size: 9vh;
+    }
+
+    .role-container {
+        margin: 0;
     }
 
     .role-text {
+        margin: 0;
         font-size: 6vh;
     }
 
     .home-headline p {
-        font-size: 1.3rem;
+        margin-top: 0;
+        font-size: 1.1rem;
         max-width: 800px;
     }
 
@@ -56,17 +83,56 @@
 
 /*! For tablets and smaller (≤ 768px) */
 @media (max-width: 768px) {
+    .nav-right {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background: var(--secondary-text-color);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 0;
+        margin: 0;
+        /* remove desktop margin */
+    }
+
+    .nav-right.show {
+        display: flex;
+        /* show when toggled */
+    }
+
+    .nav-items {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links {
+        color: var(--primary-text-color);
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+
+    .menu-toggle {
+        display: block;
+        /* Show hamburger on small screen */
+    }
+
     .home-container {
         max-width: 90%;
-        margin: 0 auto;
-        padding: 2rem 1rem;
+        padding: 2rem 0rem;
     }
 
     .home-page {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        padding: 3rem 0 0 2rem;
     }
+
 
     .home-headline {
         flex: 1;
@@ -76,8 +142,9 @@
 
     .home-headline p {
         width: 100%;
-        /* prevent overflow */
+
         font-size: 1.2rem;
+        /* prevent overflow */
     }
 
     .home-title {
@@ -85,12 +152,17 @@
     }
 
     .role-text {
+        margin-bottom: 0;
         font-size: 5vh;
     }
 
     .nav-container {
         flex-wrap: wrap;
-        padding: 0.8rem 1.5rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .nav-left a {
+        font-size: 6vh;
     }
 
     .nav-right {
@@ -163,26 +235,48 @@
     }
 }
 
+@media (max-width: 600px) {
+
+    .skill-item {
+        width: 100%;
+    }
+
+    .skills-list,
+    .project-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
 @media (max-width: 576px) {
     .project-img {
         height: 260px;
     }
 }
 
-
-/* For mobile phones (≤ 480px) */
+/*! For mobile phones (≤ 480px) */
 @media (max-width: 480px) {
     .home-title {
         font-size: 5.5vh;
     }
 
     .role-container {
-        margin: 0.2rem 0 3rem;
+        margin: 0 0;
     }
 
     .role-text {
-        margin-bottom: 2rem;
-        font-size: 4.5vh;
+        margin-bottom: 0;
+        font-size: 4vh;
     }
 
     .nav-left {
@@ -191,11 +285,15 @@
     }
 
     .nav-left a {
-        font-size: 6vh;
+        font-size: 2.4rem;
     }
 
     .nav-links {
         font-size: 2.2vh;
+    }
+
+    .home-page {
+        padding: 0 2rem;
     }
 
     .home-social-icon {
@@ -203,7 +301,7 @@
     }
 
     .home-headline p {
-        margin: 1rem 0;
+        margin: 0;
         font-size: 2.2vh;
     }
 
@@ -239,11 +337,11 @@
     }
 
     .project-title {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .project-subtitle {
-        font-size: 0.9rem;
+        font-size: 1.5vh;
     }
 
     .project-btns a {
@@ -265,25 +363,8 @@
     }
 }
 
-@media (max-width: 600px) {
-
-    .skill-item {
-        width: 100%;
-    }
-
-    .skills-list,
-    .project-page {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-right {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+@media (max-width: 310px) {
+    .nav-left a {
+        font-size: 2rem;
+    } 
 }

@@ -10,7 +10,12 @@ window.addEventListener("scroll", function () {
   }
 });
 
-//! ------------------ javascript for nav-container change color on scroll --------------------
+//! ------------------ javascript for ToggleMenu show when small screen --------------------
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("show");
+}
+
+//! ------------------ javascript for alert when submitting form --------------------
     function submitForm(e) {
         e.preventDefault(); // Prevent real form submission
 

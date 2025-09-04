@@ -46,12 +46,7 @@ MAIN STYLING START
 }
 
 .home-container {
-    display: flex;
     max-height: 90vh;
-    align-items: center;
-    justify-content: center;
-
-
 }
 
 .nav-container {
@@ -59,7 +54,7 @@ MAIN STYLING START
     z-index: 3;
     width: 100vw;
     display: flex;
-    padding: .3em 0;
+    padding: .3em .5rem;
     position: fixed;
     align-items: center;
     background-color: transparent;
@@ -80,7 +75,7 @@ MAIN STYLING START
 }
 
 .nav-left a {
-    font-size: 9vh;
+    font-size: 6vh;
     filter: sepia(1);
     font-weight: 400;
     padding-top: .2em;
@@ -95,12 +90,24 @@ MAIN STYLING START
     background-image: url(https://thumbs.dreamstime.com/b/glow-fire-abstract-background-illustration-warm-inviting-image-shapes-colors-movement-glow-fire-abstract-background-glow-fire-372070061.jpg);
 }
 
+.menu-toggle {
+    border: none;
+    z-index: 1001;  /* hmesha top per rhega lekin hide laptop viewpoint ke liye */
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    background: none;
+    margin-right: 1rem;
+    color: var(--primary-text-color);
+}
+
 .nav-right {
     margin-right: 4rem;
 }
 
 .nav-items {
     flex: 1;
+    max-width: 60vw;
     display: flex;
     list-style: none;
     align-items: center;
@@ -109,28 +116,22 @@ MAIN STYLING START
 }
 
 .nav-links {
-    margin: 0 2em;
+    padding: 2rem;
     font-weight: 500;
     font-size: 1.2rem;
     text-decoration: none;
+    transition: all 0.5s ease;
     color: var(--primary-text-color);
-    transition: all .5s ease;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav-links:hover {
-    text-decoration: overline;
     color: var(--link-color);
+    text-decoration: overline;
 }
 
 .home-page {
-    display: flex;
-    padding: 3rem 0;
-    flex-wrap: wrap;
-}
-
-.home-headline {
-    margin: 0 0 3.5em;
+    padding: 3rem 0 0 2rem;
 }
 
 .home-title {
@@ -145,8 +146,8 @@ MAIN STYLING START
 
 .role-container {
     position: relative;
-    min-height: 12vh; 
-    margin-bottom: 2rem; 
+    min-height: 12vh;
+    margin-bottom: 2rem;
 }
 
 .role-text {
@@ -203,7 +204,7 @@ MAIN STYLING START
     font-weight: 600;
     line-height: 1.4;
     font-size: 3.5vh;
-    margin-top: 2rem; 
+    margin-top: 2rem;
     color: var(--primary-text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -404,7 +405,7 @@ MAIN STYLING START
 .skill-achieve:hover {
     color: var(--primary-text-color);
     border: 1px solid var(--primary-text-color);
-    box-shadow: 2px -5px 40px 10px var(--primary-text-color);
+    box-shadow: 2px 5px 40px 2px var(--primary-text-color);
     background-color: var(--secondary-text-color);
 }
 
@@ -478,7 +479,7 @@ MAIN STYLING START
 .project-subtitle {
     line-height: 1.5;
     text-align: left;
-    font-size: 0.95rem;
+    font-size: 2vh;
     margin-bottom: 1rem;
 }
 
@@ -490,7 +491,7 @@ MAIN STYLING START
 }
 
 .project-btns a {
-    font-size: 1rem;
+    font-size: 2vh;
     padding: 0.6rem 1rem;
     text-decoration: none;
     border-radius: 0.5rem;
@@ -703,7 +704,7 @@ MAIN STYLING START
     flex: 1;
     gap: 1.5rem;
     display: flex;
-    min-width: 300px;
+    min-width: 220px;
     text-align: left;
     flex-direction: column;
 }
