@@ -21,6 +21,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
@@ -34,8 +35,14 @@
                 <div class="nav-left">
                     <a href="#home" class="nav-logo">Portfolio.</a>
                 </div>
+
+                <!-- Hamburger menu button -->
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
                 <div class="nav-right">
-                    <ul class="nav-items">
+                    <ul class="nav-items" id="navItems">
                         <li><a class="nav-links" href="#about">About</a></li>
                         <li><a class="nav-links" href="#skills">Skills</a></li>
                         <li><a class="nav-links" href="#projects">Projects</a></li>
@@ -45,6 +52,7 @@
                     </ul>
                 </div>
             </div>
+
 
             <div class="home-page">
                 <div class="home-headline">
@@ -267,7 +275,7 @@
             <!-- education 1  -->
             <div class="education-data" id="data1">
                 <div class="education-names">
-                   <i class="fa-solid fa-building-columns education-icon"></i>
+                    <i class="fa-solid fa-building-columns education-icon"></i>
                     <h1 class="education-name">Master of Computer Application</h1>
                     <p class="education-platform">Dr. A.P.J. Abdul Kalam Technical University</p>
                     <p class="education-duration">August 2024 – Present</p>
@@ -277,7 +285,7 @@
             <!-- education 2 -->
             <div class="education-data" id="data2">
                 <div class="education-names">
-                   <i class="fa-solid fa-building-columns education-icon"></i>
+                    <i class="fa-solid fa-building-columns education-icon"></i>
                     <h1 class="education-name">Bachelor of Science in Computer Science</h1>
                     <p class="education-platform ">Chaudhary Charan Singh University</p>
                     <p class="education-duration ">August 2021 – July 2024</p>

@@ -41,22 +41,25 @@ MAIN STYLING START
              Home 
 ===============================*/
 #home {
-    scroll-snap-align: start;
     padding: 4rem 0;
+    scroll-snap-align: start;
 }
 
 .home-container {
-    padding: 1.8rem 0;
-    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 90vh;
+  
+
 }
 
 .nav-container {
     top: 0;
-    flex: 1;
     z-index: 3;
-    width: 100%;
+    width: 100vw;
     display: flex;
-    padding: .3em;
+    padding: .3em 0;
     position: fixed;
     align-items: center;
     background-color: transparent;
@@ -73,7 +76,7 @@ MAIN STYLING START
     height: 4rem;
     display: flex;
     align-items: center;
-    margin-left: .5em;
+    padding-left: 1.5em;
     /* border: 2px solid var(--format-color); */
 }
 
@@ -81,7 +84,7 @@ MAIN STYLING START
     filter: sepia(1);
     font-weight: 400;
     padding-top: .2em;
-    font-size: 2.5rem;
+    font-size: 9vh;
     color: transparent;
     font-style: normal;
     background-clip: text;
@@ -108,7 +111,7 @@ MAIN STYLING START
 
 .nav-links {
     margin: 0 2em;
-    font-size: 1em;
+    font-size: 3vh;
     font-weight: 500;
     text-decoration: none;
     background-clip: text;
@@ -126,37 +129,34 @@ MAIN STYLING START
 }
 
 .home-page {
-    flex: 1;
     display: flex;
+    padding: 3rem 0;
     flex-wrap: wrap;
 }
 
 .home-headline {
-    width: 100%;
-    margin: 0 3em;
+    margin: 0 0 3.5em;
 }
 
 .home-title {
-    font-size: 9vw;
+    font-size: 15vh;
     line-height: 1;
+    padding-top: 3vh;
     word-spacing: -8px;
     color: var(--primary-text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: all 4s ease linear;
+    transition: all 4s ease;
 }
 
 .role-container {
     position: relative;
-    height: 5rem;
-    overflow: hidden;
+    margin-bottom: 5rem;
 }
 
 .role-text {
-    top: 0;
-    left: 0;
     opacity: 0;
-    width: 100%;
-    font-size: 5vw;
+    font-size: 10vh;
+    margin-bottom: 2rem;
     font-weight: 500;
     text-align: left;
     position: absolute;
@@ -203,31 +203,30 @@ MAIN STYLING START
 }
 
 .home-headline p {
-    width: 70%;
+    width: 70vw;
     font-weight: 600;
-    line-height: 1.2;
-    font-size: 1.8vw;
-    padding: 2.5rem 0;
+    line-height: 1.4;
+    font-size: 3.5vh;
+    margin: 2.5rem 0;
     color: var(--primary-text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .home-btn {
     flex: 1;
-    gap: 1.5vh;
+    gap: 3rem;
     display: flex;
     flex-wrap: wrap;
 }
 
 .home-btn .btn {
-    font-size: 1.5vw;
     display: flex;
     align-items: center;
     border: none;
-    padding: 1.5vw;
+    padding: 20px;
     cursor: pointer;
     list-style: none;
-    border-radius: 5px;
+    border-radius: 10px;
     text-decoration: none;
     color: var(--primary-text-color);
     transition: background-color 1.2s ease;

@@ -1,0 +1,103 @@
+/* ==============================
+    Responsive Styles
+============================== */
+
+/* For tablets and smaller (≤ 768px) */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-wrap: wrap;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .nav-left a {
+        font-size: 8vh;
+    }
+
+    .nav-right {
+        width: 100%;
+        order: 3;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        text-align: left;
+        padding: 1rem 0;
+        background-color: var(--secondary-text-color);
+    }
+
+    .nav-items.show {
+        display: flex;
+    }
+
+    .nav-links {
+        font-size: 2.5vh;
+        margin: 1rem 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--primary-text-color);
+    }
+
+    .home-title {
+        font-size: 7vh;
+    }
+
+    .role-text {
+        font-size: 5vh;
+    }
+
+    .home-headline p {
+        font-size: 2.5vh;
+        width: 90vw;
+    }
+
+    .home-btn {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .home-btn .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* For mobile phones (≤ 480px) */
+@media (max-width: 480px) {
+    .home-title {
+        font-size: 5.5vh;
+    }
+
+    .role-container {
+        margin: 0.2rem 0 3rem;
+    }
+
+    .role-text {
+        margin-bottom: 2rem;
+        font-size: 4.5vh;
+    }
+
+    .nav-left {
+        margin-left: .1rem;
+        padding-left: 0;
+    }
+
+    .nav-left a {
+        font-size: 6vh;
+    }
+
+    .nav-links {
+        font-size: 2.2vh;
+    }
+
+    .home-headline p {
+        margin: 1rem 0;
+        font-size: 2.2vh;
+    }
+}
