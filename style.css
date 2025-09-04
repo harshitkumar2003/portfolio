@@ -447,6 +447,7 @@ MAIN STYLING START
     box-shadow: 10px -5px 40px 14px rgba(0, 0, 0, 0.3);
 }
 
+/* Background Images  */
 #p1 {
     background-position: top;
     background-image: url("Image/moto-s.png");
@@ -540,7 +541,7 @@ MAIN STYLING START
 
 .education-data:hover {
     transform: scale(1.2);
-   background: #d4af37;
+    background: #d4af37;
 }
 
 #data1 {
