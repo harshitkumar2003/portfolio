@@ -12,6 +12,7 @@
 /*TODO root */
 :root {
     --format-color: red;
+    --linkedin-color: rgb(12, 12, 193);
     --primary-text-color: rgb(255, 255, 255);
     --secondary-text-color: rgb(0, 0, 0);
     --role-color: rgb(143, 149, 106);
@@ -279,10 +280,6 @@ MAIN STYLING START
     background-color: var(--bg-transparent-color);
 }
 
-.about-container:hover {
-    background-color: var(--bg-hover-color);
-}
-
 .about-page {
     display: flex;
     flex-wrap: wrap;
@@ -300,30 +297,25 @@ MAIN STYLING START
     height: 250px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid var(--border-color);
     transition: transform 0.3s ease-in-out;
-}
-
-.profile-image:hover {
-    transform: scaleX(-1);
+    box-shadow: 0px 0px 7px 7px var(--bg-hover-color);
 }
 
 .home-social {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 1.5rem;
 }
 
-.home-social-icon {
-    font-size: 1.8rem;
+.home-social a {
+    font-size: 2rem;
     color: var(--primary-text-color);
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform .3s ease, color 0.3s ease;
 }
 
-.home-social-icon:hover {
-    transform: scale(1.2);
-    color: var(--format-color);
+.home-social a:hover {
+    transform: scale(1.4);
 }
 
 .about-content {
@@ -370,7 +362,7 @@ MAIN STYLING START
     padding: 1.5rem;
     border-radius: 1rem;
     flex: 0 0 calc(50% - 2rem);
-    max-width: calc(50% - 2rem);
+    /* max-width: calc(50% - 2rem); */
     border: 2px solid var(--border-color);
     background-color: var(--bg-transparent-color);
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -433,9 +425,9 @@ MAIN STYLING START
 }
 
 .project-page {
+    gap: 2rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
     justify-content: center;
 }
 
@@ -456,13 +448,13 @@ MAIN STYLING START
 }
 
 #p1 {
-    background-image: url("Image/moto-s.png");
     background-position: top;
+    background-image: url("Image/moto-s.png");
 }
 
 #p2 {
-    background-image: url("Image/between.png");
     background-position: top;
+    background-image: url("Image/between.png");
 
 }
 
@@ -507,18 +499,20 @@ MAIN STYLING START
 }
 
 .project-btns a:hover {
-     font-weight: 800;
+    font-weight: 800;
     transform: scale(1.05);
     color: var(--secondary-text-color);
     background-color: var(--primary-text-color);
 }
 
 .project-btns a:nth-child(2):hover {
-     font-weight: 800;
+    font-weight: 800;
     color: var(--format-color);
     background-color: var(--secondary-text-color);
-     box-shadow: 1px 1px 10px 2px var(--primary-text-color);
+    box-shadow: 1px 1px 10px 2px var(--primary-text-color);
 }
+
+
 /* ==============================
              Education
 ============================== */
@@ -528,25 +522,41 @@ MAIN STYLING START
 }
 
 .education-container {
-    max-width: 1000px;
-    margin: 0 auto;
     padding: 2rem;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 .education-data {
-    margin-bottom: 3rem;
     padding: 2rem;
-    border: 2px solid var(--border-color);
-    border-radius: 1rem;
-    background-color: var(--bg-transparent-color);
-    color: var(--primary-text-color);
     text-align: center;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    color: var(--primary-text-color);
+    border: 2px solid var(--border-color);
+    background-color: var(--bg-transparent-color);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .education-data:hover {
-    transform: translateY(-5px);
-    background-color: var(--bg-hover-color);
+    transform: scale(1.2);
+   background: #d4af37;
+}
+
+#data1 {
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(var(--border-color)),
+        url(Image/miet.png);
+}
+
+#data2 {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(var(--border-color)),
+        url(Image/ccsu.png);
 }
 
 .education-names i {
