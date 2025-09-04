@@ -220,13 +220,14 @@ MAIN STYLING START
 }
 
 .home-btn .btn {
+    font-size: 1.5vw;
     display: flex;
     align-items: center;
     border: none;
-    padding: 20px;
+    padding: 1.5vw;
     cursor: pointer;
     list-style: none;
-    border-radius: 10px;
+    border-radius: 5px;
     text-decoration: none;
     color: var(--primary-text-color);
     transition: background-color 1.2s ease;
