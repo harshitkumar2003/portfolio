@@ -23,4 +23,3 @@ window.addEventListener("scroll", function () {
         // Reset the form
         e.target.reset();
     }
-

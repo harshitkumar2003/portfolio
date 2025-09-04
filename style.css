@@ -47,9 +47,9 @@ MAIN STYLING START
 
 .home-container {
     display: flex;
+    max-height: 90vh;
     align-items: center;
     justify-content: center;
-    max-height: 90vh;
 
 
 }
@@ -77,14 +77,13 @@ MAIN STYLING START
     display: flex;
     align-items: center;
     padding-left: 1.5em;
-    /* border: 2px solid var(--format-color); */
 }
 
 .nav-left a {
+    font-size: 9vh;
     filter: sepia(1);
     font-weight: 400;
     padding-top: .2em;
-    font-size: 9vh;
     color: transparent;
     font-style: normal;
     background-clip: text;
@@ -139,13 +138,13 @@ MAIN STYLING START
 }
 
 .home-title {
-    font-size: 15vh;
     line-height: 1;
+    font-size: 15vh;
     padding-top: 3vh;
     word-spacing: -8px;
+    transition: all 4s ease;
     color: var(--primary-text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: all 4s ease;
 }
 
 .role-container {
@@ -156,11 +155,11 @@ MAIN STYLING START
 .role-text {
     opacity: 0;
     font-size: 10vh;
-    margin-bottom: 2rem;
     font-weight: 500;
     text-align: left;
     position: absolute;
     color: transparent;
+    margin-bottom: 2rem;
     background-clip: text;
     background-size: contain;
     animation: fadeInOut 9s infinite;
@@ -221,12 +220,12 @@ MAIN STYLING START
 
 .home-btn .btn {
     display: flex;
-    align-items: center;
     border: none;
     padding: 20px;
     cursor: pointer;
     list-style: none;
     border-radius: 10px;
+    align-items: center;
     text-decoration: none;
     color: var(--primary-text-color);
     transition: background-color 1.2s ease;
@@ -254,9 +253,9 @@ MAIN STYLING START
         Section Heading
 ============================== */
 .section-heading {
-    font-size: 2.5rem;
+    margin: 1.5rem 0;
     font-weight: 600;
-    margin-bottom: 3rem;
+    font-size: 2.3rem;
     text-align: center;
     color: var(--primary-text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -266,18 +265,22 @@ MAIN STYLING START
              About
 ============================== */
 #about {
-    padding: 5rem 1rem;
+    display: block;
+    padding: 3rem 1rem;
+    align-items: center;
+    background: transparent;
+    justify-content: center;
     scroll-snap-align: center;
 }
 
 .about-container {
-    border: 2px solid var(--border-color);
-    border-radius: 2rem;
-    background-color: var(--bg-transparent-color);
-    transition: background-color 0.4s ease;
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-radius: 2rem;
+    border: 2px solid var(--border-color);
+    transition: background-color 0.4s ease;
+    background-color: var(--bg-transparent-color);
 }
 
 .about-container:hover {
@@ -339,8 +342,9 @@ MAIN STYLING START
 }
 
 .about-content p {
-    font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.2;
+    font-size: 1.05rem;
+    margin-bottom: 1.5em;
     color: var(--primary-text-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
