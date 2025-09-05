@@ -89,7 +89,8 @@ MAIN STYLING START
 
 .menu-toggle {
     border: none;
-    z-index: 1001;  /*! hmesha top per rhega lekin hide laptop viewpoint ke liye */
+    z-index: 1001;
+    /*! hmesha top per rhega lekin hide laptop viewpoint ke liye */
     display: none;
     cursor: pointer;
     font-size: 2rem;
