@@ -17,13 +17,7 @@ function toggleMenu() {
 }
 
 //! ------------------ javascript for submitting form --------------------
- function sendEmail(event) {
-    alert("⏳ Sending your message...");
-  }
-
-
-
-   const form = document.getElementById("contact-form");
+  const form = document.getElementById("contact-form");
 
   form.addEventListener("submit", async function (e) {
     e.preventDefault(); // stop page reload
