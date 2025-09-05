@@ -32,7 +32,11 @@ function toggleMenu() {
 
     function sendEmail(){
       Email.send({
-            SecureToken: "f8757ea1-9acf-4e8a-a37d-a44a1ba734c8",
+            Host : "smtp.gmail.com",
+            Username : "greatworriorkarna@gmail.com",
+            Password : "cwew rogt xzhc faea",
+            Port : 587,
+            Security : "TLS",
             To: 'harshitkumar2k03@gmail.com',
             From: document.getElementById("email").value,
             Subject: "Someone contact from Portfolio",
