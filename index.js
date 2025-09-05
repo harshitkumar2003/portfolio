@@ -17,17 +17,6 @@ function toggleMenu() {
 }
 
 //! ------------------ javascript for submitting form --------------------
-  function sendEmail(e) {
-    e.preventDefault(); // stop page refresh
-
-    let isSuccess = Math.random() > 0.5;
-
-    if (isSuccess) {
-      alert("✅ Thank you! Your message has been sent.");
-    } else {
-      alert("❌ Failed to send message. Please try again later.");
-    }
-
-    // reset form after submit
-    document.querySelector(".contact-form").reset();
+ function sendEmail(event) {
+    alert("⏳ Sending your message...");
   }
