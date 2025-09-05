@@ -12,7 +12,8 @@ window.addEventListener("scroll", function () {
 
 //! ------------------ javascript for ToggleMenu show when small screen --------------------
 function toggleMenu() {
-  document.getElementById("navMenu").classList.toggle("show");
+    const navMenu = document.getElementById("navMenu");
+    navMenu.classList.toggle("show");
 }
 
 //! ------------------ javascript for alert when submitting form --------------------

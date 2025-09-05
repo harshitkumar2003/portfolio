@@ -102,7 +102,7 @@ MAIN STYLING START
 }
 
 .nav-right {
-    margin-right: 4rem;
+    display: flex;
 }
 
 .nav-items {
