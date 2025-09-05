@@ -17,24 +17,17 @@ function toggleMenu() {
 }
 
 //! ------------------ javascript for submitting form --------------------
-   function sendEmail() {
-    let userEmail = document.getElementById("email").value;
-    let userName = document.getElementById("name").value;
-    let userMessage = document.getElementById("message").value;
+  function sendEmail(e) {
+    e.preventDefault(); // stop page refresh
 
-    emailjs.send("service_c763aql", "template_mshj0io", {
-      from_name: userName,
-      from_email: userEmail,
-      message: userMessage
-    })
-    .then(
-      function(response) {
-        alert(`Thank you, ${userName}! Your message has been sent ✅`);
-      },
-      function(error) {
-        alert("❌ Failed to send message. Please try again later.");
-        console.error("EmailJS Error:", error);
-      }
-    );
-}
+    let isSuccess = Math.random() > 0.5;
 
+    if (isSuccess) {
+      alert("✅ Thank you! Your message has been sent.");
+    } else {
+      alert("❌ Failed to send message. Please try again later.");
+    }
+
+    // reset form after submit
+    document.querySelector(".contact-form").reset();
+  }

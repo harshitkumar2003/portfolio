@@ -37,14 +37,6 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- form submit javascript -->
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        (function () {
-            emailjs.init("public_fa1cvvF0qiT6JhTi1");
-        })();
-    </script>
-
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
@@ -383,7 +375,7 @@
                 </div>
 
                 <!-- Right: Contact Form -->
-                <form class="contact-form" onsubmit="sendEmail(); return false">
+                <form class="contact-form" onsubmit="sendEmail(event);">
                     <div class="form-group">
                         <label><i class="fa-solid fa-user"></i></label>
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
