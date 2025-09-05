@@ -19,25 +19,24 @@
     }
 
     .menu-toggle {
+        border: none;
         display: block;
+        cursor: pointer;
         font-size: 2rem;
         background: none;
-        border: none;
-        cursor: pointer;
         color: var(--primary-text-color);
     }
 
     .nav-right {
-        display: none;
-        /* hidden by default */
-        position: absolute;
-        top: 60px;
         left: 0;
+        top: 60px;
+        z-index: 9;
         width: 100%;
+        display: none;  /* hidden by default */
+        padding: 1rem 0;
+        position: absolute;
         flex-direction: column;
         background: var(--secondary-text-color);
-        padding: 1rem 0;
-        z-index: 9;
     }
 
 
@@ -46,20 +45,20 @@
     }
 
     .nav-right.show .nav-items {
-        display: flex !important;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        list-style: none;
         align-items: start;
         flex-direction: column;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        list-style: none;
+        display: flex !important;
     }
 
     .nav-right.show .nav-links {
-        display: block;
         width: 100%;
-        padding: 5px 25px;
+        display: block;
         text-align: left;
+        padding: 5px 25px;
         font-size: 1.2rem;
         color: var(--primary-text-color);
     }
@@ -69,13 +68,13 @@
     }
 
     .nav-left {
-        font-size: 7vh;
         padding: 0;
+        font-size: 7vh;
     }
 
     .home-container {
-        max-width: 1200px;
         padding: 1rem 0;
+        max-width: 1200px;
     }
 
     .home-page {
@@ -97,8 +96,8 @@
 
     .home-headline p {
         margin-top: 0;
-        font-size: 1.1rem;
         max-width: 800px;
+        font-size: 1.1rem;
     }
 
     .home-btn {
@@ -106,8 +105,8 @@
     }
 
     .project-page {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
     }
 
     .project-img {
@@ -130,42 +129,39 @@
 /*! For tablets and smaller (≤ 768px) */
 @media (max-width: 768px) {
     .nav-right {
-        position: absolute;
-        top: 60px;
         right: 0;
+        margin: 0;    /* remove desktop margin */
+        top: 60px;
         width: 100%;
-        background: var(--secondary-text-color);
         display: none;
+        padding: 1rem 0;
+        position: absolute;
         flex-direction: column;
         align-items: flex-start;
-        padding: 1rem 0;
-        margin: 0;
-        /* remove desktop margin */
+        background: var(--secondary-text-color);
     }
 
     .nav-right.show {
-        display: flex;
-        /* show when toggled */
+        display: flex;    /* show when toggled */
     }
 
     .nav-items {
-        flex-direction: column;
-        width: 100%;
         margin: 0;
         padding: 0;
+        width: 100%;
+        flex-direction: column;
     }
 
     .nav-links {
-        color: var(--primary-text-color);
-        width: 100%;
         margin: 0;
         padding: 0;
+        width: 100%;
+        color: var(--primary-text-color);
     }
 
 
     .menu-toggle {
-        display: block;
-        /* Show hamburger on small screen */
+        display: block;   /* Show toggle on small screen */
     }
 
     .home-container {
@@ -186,9 +182,7 @@
 
     .home-headline p {
         width: 100%;
-
-        font-size: 1.2rem;
-        /* prevent overflow */
+        font-size: 1.2rem;    /* prevent overflow */
     }
 
     .home-title {
@@ -196,8 +190,8 @@
     }
 
     .role-text {
-        margin-bottom: 0;
         font-size: 5vh;
+        margin-bottom: 0;
     }
 
     .nav-container {
@@ -209,41 +203,9 @@
         font-size: 6vh;
     }
 
-    /* .nav-right {
-        width: 100%;
-        order: 3;
-    } */
-
-    /* .nav-items {
-        display: none;
-        flex-direction: column;
-        text-align: left;
-        padding: 1rem 0;
-        background-color: var(--secondary-text-color);
-    } */
-
-    /* .nav-items.show {
-        display: flex;
-    }
-
-    .nav-links {
-        font-size: 2.2vh;
-        margin: 0;
-        padding: 0;
-    }
-
-    .menu-toggle {
-        display: block;
-        font-size: 2rem;
-        background: none;
-        border: none;
-        cursor: pointer;
-        color: var(--primary-text-color);
-    } */
-
     .home-btn {
-        flex-direction: column;
         gap: 1rem;
+        flex-direction: column;
     }
 
     .home-btn .btn {
@@ -252,8 +214,8 @@
     }
 
     .about-page {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
     }
 
     .about-content,
@@ -265,10 +227,6 @@
     .skill-item {
         width: 100%;
     }
-
-    /* .project-img {
-        height: 300px;
-    } */
 
     .contact-wrapper {
         flex-direction: column;
@@ -287,18 +245,18 @@
 
     .skills-list,
     .project-page {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
     }
 
     .footer-container {
-        flex-direction: column;
         text-align: center;
+        flex-direction: column;
     }
 
     .footer-right {
-        justify-content: center;
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -319,13 +277,13 @@
     }
 
     .role-text {
-        margin-bottom: 0;
         font-size: 4vh;
+        margin-bottom: 0;
     }
 
     .nav-left {
-        margin-left: .1rem;
         padding-left: 0;
+        margin-left: .1rem;
     }
 
     .nav-left a {
@@ -333,9 +291,9 @@
     }
 
     .nav-links {
-        font-size: 2.2vh;
         margin: 0;
         padding: 0;
+        font-size: 2.2vh;
     }
 
     .home-page {
