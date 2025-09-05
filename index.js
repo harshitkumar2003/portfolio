@@ -23,8 +23,8 @@ function toggleMenu() {
     let userMessage = document.getElementById("message").value;
 
     emailjs.send("service_c763aql", "template_mshj0io", {
-      from_email: userEmail,
       from_name: userName,
+      from_email: userEmail,
       message: userMessage
     })
     .then(

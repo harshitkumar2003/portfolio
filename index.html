@@ -14,17 +14,17 @@
 
     <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://portfolio-2003.vercel.app/"> <!-- portfolio link -->
+    <meta property="og:url" content="https://portfolio-2003.vercel.app/">
     <meta property="og:title" content="Harshit Kumar | Portfolio">
     <meta property="og:description" content="Aspiring Software Developer | Frontend Developer | Data Analyst.">
-    <meta property="og:image" content="c:\Users\harsh\문서\Code Playground\Portfolio\Image\shareable.png">
+    <meta property="og:image" content="https://portfolio-2003.vercel.app/Image/shareable.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://portfolio-2003.vercel.app/">
     <meta name="twitter:title" content="Harshit Kumar | Portfolio">
     <meta name="twitter:description" content="Aspiring Software Developer | Frontend Developer | Data Analyst.">
-    <meta name="twitter:image" content="c:\Users\harsh\문서\Code Playground\Portfolio\Image\shareable.png">
+    <meta name="twitter:image" content="https://portfolio-2003.vercel.app/Image/shareable.png">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="Image/favicon.png">
@@ -41,7 +41,7 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         (function () {
-            emailjs.init("fa1cvvF0qiT6JhTi1");
+            emailjs.init("public_fa1cvvF0qiT6JhTi1");
         })();
     </script>
 
@@ -383,7 +383,7 @@
                 </div>
 
                 <!-- Right: Contact Form -->
-                <form class="contact-form" onsubmit="sendEmail(); reset(); return false">
+                <form class="contact-form" onsubmit="sendEmail(); return false">
                     <div class="form-group">
                         <label><i class="fa-solid fa-user"></i></label>
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
