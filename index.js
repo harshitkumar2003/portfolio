@@ -20,3 +20,32 @@ function toggleMenu() {
  function sendEmail(event) {
     alert("⏳ Sending your message...");
   }
+
+
+
+   const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault(); // stop page reload
+
+    // show first alert
+    alert("⏳ Sending your message...");
+
+    try {
+      let response = await fetch("https://formspree.io/f/mqadgvgd", {
+        method: "POST",
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        alert("✅ Thank you! Your message has been sent.");
+        form.reset(); // clear form
+      } else {
+        alert("❌ Failed to send message. Please try again later.");
+      }
+    } catch (error) {
+      alert("⚠️ Network error. Please check your connection.");
+      console.error("Formspree Error:", error);
+    }
+  });
