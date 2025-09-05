@@ -18,14 +18,14 @@ function toggleMenu() {
 
 //! ------------------ javascript for submitting form --------------------
    function sendEmail() {
-    let userName = document.getElementById("name").value;
     let userEmail = document.getElementById("email").value;
+    let userName = document.getElementById("name").value;
     let userMessage = document.getElementById("message").value;
 
     emailjs.send("service_c763aql", "template_mshj0io", {
-        from_name: userName,
-        from_email: userEmail,
-        message: userMessage
+      from_email: userEmail,
+      from_name: userName,
+      message: userMessage
     })
     .then(
       function(response) {
