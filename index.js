@@ -29,3 +29,16 @@ function toggleMenu() {
         // Reset the form
         e.target.reset();
     }
+
+    function sendEmail(){
+      Email.send({
+            SecureToken: "f8757ea1-9acf-4e8a-a37d-a44a1ba734c8",
+            To: 'harshitkumar2k03@gmail.com',
+            From: document.getElementById("email").value,
+            Subject: "Someone contact from Portfolio",
+            Body:
+                "Name: " + document.getElementById("name").value
+                + " <br> Email: " + document.getElementById("email").value
+                + " <br> Message: " + document.getElementById("message").value,
+        });
+      }
