@@ -376,7 +376,7 @@
                 </div>
 
                 <!-- Right: Contact Form -->
-                <form class="contact-form" onsubmit="submitForm(event); sendEmail(); return false">
+                <form class="contact-form" onsubmit="sendEmail(); reset(); return false">
                     <div class="form-group">
                         <label><i class="fa-solid fa-user"></i></label>
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
