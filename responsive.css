@@ -32,7 +32,8 @@
         top: 60px;
         z-index: 9;
         width: 100%;
-        display: none;  /* hidden by default */
+        display: none;
+        /* hidden by default */
         padding: 1rem 0;
         position: absolute;
         flex-direction: column;
@@ -131,7 +132,8 @@
 @media (max-width: 768px) {
     .nav-right {
         right: 0;
-        margin: 0;    /* remove desktop margin */
+        margin: 0;
+        /* remove desktop margin */
         top: 60px;
         width: 100%;
         display: none;
@@ -143,7 +145,8 @@
     }
 
     .nav-right.show {
-        display: flex;    /* show when toggled */
+        display: flex;
+        /* show when toggled */
     }
 
     .nav-items {
@@ -162,7 +165,8 @@
 
 
     .menu-toggle {
-        display: block;   /* Show toggle on small screen */
+        display: block;
+        /* Show toggle on small screen */
     }
 
     .home-container {
@@ -183,7 +187,8 @@
 
     .home-headline p {
         width: 100%;
-        font-size: 1.2rem;    /* prevent overflow */
+        font-size: 1.2rem;
+        /* prevent overflow */
     }
 
     .home-title {
