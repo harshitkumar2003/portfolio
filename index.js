@@ -16,19 +16,25 @@ function toggleMenu() {
     navMenu.classList.toggle("show");
 }
 
-//! ------------------ javascript for alert when submitting form --------------------
-    function sendEmail(){
-      Email.send({
-            Host : "smtp.gmail.com",
-            Username : "greatworriorkarna@gmail.com",
-            Password : "cwew rogt xzhc faea",
-            To : 'harshitkumar2k03@gmail.com',
-            From : document.getElementById("email").value,
-            Subject : "Someone contacting you from Portfolio",
-            Body : "Name: " + document.getElementById("name").value
-                + " <br> Email: " + document.getElementById("email").value
-                + " <br> Message: " + document.getElementById("message").value,
-        }).then(
-          message => alert(`Thank you, ${name || 'there'}! Your message has been sent.`)
-        );
+//! ------------------ javascript for submitting form --------------------
+   function sendEmail() {
+    let userName = document.getElementById("name").value;
+    let userEmail = document.getElementById("email").value;
+    let userMessage = document.getElementById("message").value;
+
+    emailjs.send("service_c763aql", "template_mshj0io", {
+        from_name: userName,
+        from_email: userEmail,
+        message: userMessage
+    })
+    .then(
+      function(response) {
+        alert(`Thank you, ${userName}! Your message has been sent ✅`);
+      },
+      function(error) {
+        alert("❌ Failed to send message. Please try again later.");
+        console.error("EmailJS Error:", error);
       }
+    );
+}
+
