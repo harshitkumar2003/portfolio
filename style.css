@@ -76,23 +76,20 @@ MAIN STYLING START
 
 .nav-left a {
     font-size: 6vh;
-    filter: sepia(1);
     font-weight: 400;
     padding-top: .2em;
-    color: transparent;
     font-style: normal;
-    background-clip: text;
     text-decoration: none;
-    font-optical-sizing: auto;
-    background-position: center;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
     font-family: "Ruslan Display", sans-serif;
-    text-shadow: 4px 2px 1px var(--bg-transparent-color);
-    background-image: url(https://thumbs.dreamstime.com/b/glow-fire-abstract-background-illustration-warm-inviting-image-shapes-colors-movement-glow-fire-abstract-background-glow-fire-372070061.jpg);
+    text-shadow: -9px 0px 7px rgb(212, 158, 152);
+
 }
 
 .menu-toggle {
     border: none;
-    z-index: 1001;  /* hmesha top per rhega lekin hide laptop viewpoint ke liye */
+    z-index: 1001;  /*! hmesha top per rhega lekin hide laptop viewpoint ke liye */
     display: none;
     cursor: pointer;
     font-size: 2rem;
@@ -276,7 +273,8 @@ MAIN STYLING START
     padding: 2rem;
     margin: 0 auto;
     max-width: 1200px;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
+    border-radius: 150px 50px 150px 50px;
     border: 2px solid var(--border-color);
     transition: background-color 0.4s ease;
     background-color: var(--bg-transparent-color);
@@ -362,7 +360,7 @@ MAIN STYLING START
 
 .skill-item {
     padding: 1.5rem;
-    border-radius: 1rem;
+    border-radius: .7rem;
     flex: 0 0 calc(50% - 2rem);
     /* max-width: calc(50% - 2rem); */
     border: 2px solid var(--border-color);
@@ -445,7 +443,7 @@ MAIN STYLING START
 }
 
 .project-img:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     box-shadow: 10px -5px 40px 14px rgba(0, 0, 0, 0.3);
 }
 
