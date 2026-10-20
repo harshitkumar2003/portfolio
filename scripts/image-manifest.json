@@ -1,0 +1,584 @@
+{
+ "avif": true,
+ "images": {
+  "profile": {
+   "src": "profile.jpg",
+   "orig": [
+    1079,
+    1090
+   ],
+   "files": [
+    [
+     "public/images/profile-400.webp",
+     400,
+     404,
+     16032
+    ],
+    [
+     "public/images/profile-400.avif",
+     400,
+     404,
+     12751
+    ],
+    [
+     "public/images/profile-800.webp",
+     800,
+     808,
+     41604
+    ],
+    [
+     "public/images/profile-800.avif",
+     800,
+     808,
+     37811
+    ]
+   ]
+  },
+  "moto-s": {
+   "src": "moto-s.png",
+   "orig": [
+    1440,
+    2493
+   ],
+   "files": [
+    [
+     "public/images/moto-s-640.webp",
+     640,
+     1108,
+     52834
+    ],
+    [
+     "public/images/moto-s-640.avif",
+     640,
+     1108,
+     37815
+    ],
+    [
+     "public/images/moto-s-1100.webp",
+     1100,
+     1904,
+     122398
+    ],
+    [
+     "public/images/moto-s-1100.avif",
+     1100,
+     1904,
+     88905
+    ]
+   ]
+  },
+  "between": {
+   "src": "between.png",
+   "orig": [
+    1440,
+    1933
+   ],
+   "files": [
+    [
+     "public/images/between-640.webp",
+     640,
+     859,
+     41096
+    ],
+    [
+     "public/images/between-640.avif",
+     640,
+     859,
+     32625
+    ],
+    [
+     "public/images/between-1100.webp",
+     1100,
+     1477,
+     84940
+    ],
+    [
+     "public/images/between-1100.avif",
+     1100,
+     1477,
+     66590
+    ]
+   ]
+  },
+  "miet": {
+   "src": "miet.png",
+   "orig": [
+    1400,
+    500
+   ],
+   "files": [
+    [
+     "public/images/miet-700.webp",
+     700,
+     250,
+     39496
+    ],
+    [
+     "public/images/miet-700.avif",
+     700,
+     250,
+     24141
+    ],
+    [
+     "public/images/miet-1400.webp",
+     1400,
+     500,
+     132836
+    ],
+    [
+     "public/images/miet-1400.avif",
+     1400,
+     500,
+     86845
+    ]
+   ]
+  },
+  "ccsu": {
+   "src": "ccsu.png",
+   "orig": [
+    385,
+    131
+   ],
+   "files": [
+    [
+     "public/images/ccsu-385.webp",
+     385,
+     131,
+     14030
+    ],
+    [
+     "public/images/ccsu-385.avif",
+     385,
+     131,
+     9479
+    ]
+   ]
+  },
+  "gallery-01": {
+   "src": "gallery-photo/IMG-20250904-WA0002.jpg",
+   "orig": [
+    725,
+    1600
+   ],
+   "files": [
+    [
+     "public/images/gallery-01-480.webp",
+     480,
+     1059,
+     71758
+    ],
+    [
+     "public/images/gallery-01-480.avif",
+     480,
+     1059,
+     50212
+    ],
+    [
+     "public/images/gallery-01-725.webp",
+     725,
+     1600,
+     132444
+    ],
+    [
+     "public/images/gallery-01-725.avif",
+     725,
+     1600,
+     104105
+    ]
+   ]
+  },
+  "gallery-02": {
+   "src": "gallery-photo/IMG-20250904-WA0003.jpg",
+   "orig": [
+    899,
+    1599
+   ],
+   "files": [
+    [
+     "public/images/gallery-02-480.webp",
+     480,
+     854,
+     36130
+    ],
+    [
+     "public/images/gallery-02-480.avif",
+     480,
+     854,
+     27741
+    ],
+    [
+     "public/images/gallery-02-899.webp",
+     899,
+     1599,
+     83348
+    ],
+    [
+     "public/images/gallery-02-899.avif",
+     899,
+     1599,
+     70925
+    ]
+   ]
+  },
+  "gallery-03": {
+   "src": "gallery-photo/IMG-20250904-WA0004.jpg",
+   "orig": [
+    1600,
+    1200
+   ],
+   "files": [
+    [
+     "public/images/gallery-03-480.webp",
+     480,
+     360,
+     28670
+    ],
+    [
+     "public/images/gallery-03-480.avif",
+     480,
+     360,
+     19237
+    ],
+    [
+     "public/images/gallery-03-960.webp",
+     960,
+     720,
+     82676
+    ],
+    [
+     "public/images/gallery-03-960.avif",
+     960,
+     720,
+     59637
+    ],
+    [
+     "public/images/gallery-03-1600.webp",
+     1600,
+     1200,
+     164000
+    ],
+    [
+     "public/images/gallery-03-1600.avif",
+     1600,
+     1200,
+     133662
+    ]
+   ]
+  },
+  "gallery-04": {
+   "src": "gallery-photo/IMG-20250904-WA0005.jpg",
+   "orig": [
+    1078,
+    806
+   ],
+   "files": [
+    [
+     "public/images/gallery-04-480.webp",
+     480,
+     359,
+     30892
+    ],
+    [
+     "public/images/gallery-04-480.avif",
+     480,
+     359,
+     19890
+    ],
+    [
+     "public/images/gallery-04-960.webp",
+     960,
+     718,
+     84086
+    ],
+    [
+     "public/images/gallery-04-960.avif",
+     960,
+     718,
+     56248
+    ],
+    [
+     "public/images/gallery-04-1078.webp",
+     1078,
+     806,
+     99424
+    ],
+    [
+     "public/images/gallery-04-1078.avif",
+     1078,
+     806,
+     71181
+    ]
+   ]
+  },
+  "gallery-05": {
+   "src": "gallery-photo/IMG-20250904-WA0006.jpg",
+   "orig": [
+    1200,
+    1600
+   ],
+   "files": [
+    [
+     "public/images/gallery-05-480.webp",
+     480,
+     640,
+     27564
+    ],
+    [
+     "public/images/gallery-05-480.avif",
+     480,
+     640,
+     20380
+    ],
+    [
+     "public/images/gallery-05-960.webp",
+     960,
+     1280,
+     67720
+    ],
+    [
+     "public/images/gallery-05-960.avif",
+     960,
+     1280,
+     54325
+    ],
+    [
+     "public/images/gallery-05-1200.webp",
+     1200,
+     1600,
+     89818
+    ],
+    [
+     "public/images/gallery-05-1200.avif",
+     1200,
+     1600,
+     77030
+    ]
+   ]
+  },
+  "gallery-06": {
+   "src": "gallery-photo/IMG-20250904-WA0007.jpg",
+   "orig": [
+    1600,
+    1204
+   ],
+   "files": [
+    [
+     "public/images/gallery-06-480.webp",
+     480,
+     361,
+     31576
+    ],
+    [
+     "public/images/gallery-06-480.avif",
+     480,
+     361,
+     20467
+    ],
+    [
+     "public/images/gallery-06-960.webp",
+     960,
+     722,
+     81840
+    ],
+    [
+     "public/images/gallery-06-960.avif",
+     960,
+     722,
+     57812
+    ],
+    [
+     "public/images/gallery-06-1600.webp",
+     1600,
+     1204,
+     153770
+    ],
+    [
+     "public/images/gallery-06-1600.avif",
+     1600,
+     1204,
+     122300
+    ]
+   ]
+  },
+  "gallery-07": {
+   "src": "gallery-photo/IMG-20250904-WA0008.jpg",
+   "orig": [
+    1200,
+    1600
+   ],
+   "files": [
+    [
+     "public/images/gallery-07-480.webp",
+     480,
+     640,
+     48254
+    ],
+    [
+     "public/images/gallery-07-480.avif",
+     480,
+     640,
+     29313
+    ],
+    [
+     "public/images/gallery-07-960.webp",
+     960,
+     1280,
+     141564
+    ],
+    [
+     "public/images/gallery-07-960.avif",
+     960,
+     1280,
+     93845
+    ],
+    [
+     "public/images/gallery-07-1200.webp",
+     1200,
+     1600,
+     194896
+    ],
+    [
+     "public/images/gallery-07-1200.avif",
+     1200,
+     1600,
+     139767
+    ]
+   ]
+  },
+  "gallery-08": {
+   "src": "gallery-photo/IMG-20250904-WA0009.jpg",
+   "orig": [
+    1200,
+    1600
+   ],
+   "files": [
+    [
+     "public/images/gallery-08-480.webp",
+     480,
+     640,
+     42314
+    ],
+    [
+     "public/images/gallery-08-480.avif",
+     480,
+     640,
+     28618
+    ],
+    [
+     "public/images/gallery-08-960.webp",
+     960,
+     1280,
+     110680
+    ],
+    [
+     "public/images/gallery-08-960.avif",
+     960,
+     1280,
+     79345
+    ],
+    [
+     "public/images/gallery-08-1200.webp",
+     1200,
+     1600,
+     147360
+    ],
+    [
+     "public/images/gallery-08-1200.avif",
+     1200,
+     1600,
+     114642
+    ]
+   ]
+  },
+  "gallery-09": {
+   "src": "gallery-photo/IMG-20250904-WA0010.jpg",
+   "orig": [
+    1600,
+    1200
+   ],
+   "files": [
+    [
+     "public/images/gallery-09-480.webp",
+     480,
+     360,
+     19546
+    ],
+    [
+     "public/images/gallery-09-480.avif",
+     480,
+     360,
+     14254
+    ],
+    [
+     "public/images/gallery-09-960.webp",
+     960,
+     720,
+     47122
+    ],
+    [
+     "public/images/gallery-09-960.avif",
+     960,
+     720,
+     37880
+    ],
+    [
+     "public/images/gallery-09-1600.webp",
+     1600,
+     1200,
+     87410
+    ],
+    [
+     "public/images/gallery-09-1600.avif",
+     1600,
+     1200,
+     77582
+    ]
+   ]
+  },
+  "gallery-10": {
+   "src": "gallery-photo/image.jpg",
+   "orig": [
+    4032,
+    3024
+   ],
+   "files": [
+    [
+     "public/images/gallery-10-480.webp",
+     480,
+     360,
+     41692
+    ],
+    [
+     "public/images/gallery-10-480.avif",
+     480,
+     360,
+     24860
+    ],
+    [
+     "public/images/gallery-10-960.webp",
+     960,
+     720,
+     162202
+    ],
+    [
+     "public/images/gallery-10-960.avif",
+     960,
+     720,
+     94524
+    ],
+    [
+     "public/images/gallery-10-1600.webp",
+     1600,
+     1200,
+     414440
+    ],
+    [
+     "public/images/gallery-10-1600.avif",
+     1600,
+     1200,
+     242678
+    ]
+   ]
+  }
+ }
+}

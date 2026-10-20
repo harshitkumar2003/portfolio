@@ -1,0 +1,44 @@
+/* Design tokens — see docs/DESIGN_SYSTEM.md */
+:root {
+  /* color */
+  --c-bg: #0b0d12;
+  --c-surface: #12151c;
+  --c-surface-2: #1a1e28;
+  --c-line: rgba(255, 255, 255, 0.1);
+  --c-text: #e8ecf4;
+  --c-text-dim: #a4acbd;      /* >= 7:1 on --c-bg */
+  --c-accent: #8ab4ff;        /* electric blue */
+  --c-accent-strong: #5b8cff;
+  --c-ice: #f2f6ff;
+  --c-focus: #ffd166;
+  --c-danger: #ff8a8a;
+  --c-ok: #7ee2a8;
+
+  /* type (fluid) */
+  --f-display: 'Space Grotesk', system-ui, sans-serif;
+  --f-body: 'Inter', system-ui, sans-serif;
+  --fs-0: clamp(0.95rem, 0.9rem + 0.25vw, 1.05rem);
+  --fs-1: clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
+  --fs-2: clamp(1.4rem, 1.1rem + 1.4vw, 2rem);
+  --fs-3: clamp(2rem, 1.2rem + 3.5vw, 3.5rem);
+  --fs-hero: clamp(2.6rem, 1rem + 8vw, 7.5rem);
+
+  /* space */
+  --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem; --s-4: 1rem;
+  --s-5: 1.5rem; --s-6: 2rem; --s-7: 3rem; --s-8: 5rem; --s-9: 8rem;
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --maxw: 72rem;
+
+  /* shape + elevation */
+  --r-sm: 0.5rem; --r-md: 1rem; --r-lg: 1.5rem; --r-pill: 999px;
+  --e-1: 0 1px 0 rgba(255,255,255,.04) inset, 0 8px 24px rgba(0,0,0,.35);
+  --e-2: 0 1px 0 rgba(255,255,255,.06) inset, 0 20px 60px rgba(0,0,0,.5);
+
+  /* motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --d-fast: 150ms; --d-base: 300ms; --d-slow: 600ms;
+
+  /* layout */
+  --nav-h: 4rem;
+  /* breakpoints (reference; CSS vars can't be used in @media): sm 480, md 768, lg 1024, xl 1280 */
+}
